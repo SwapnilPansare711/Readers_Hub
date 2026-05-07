@@ -14,3 +14,33 @@
 del{
   font-size: 14px;
 }
+
+.book-card{
+    transition: all 0.4s ease;
+   
+}
+
+.book-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cart-btn{
+   
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    background: linear-gradient(to right, #5b86e5, #36d1dc);
+
+    box-shadow: 0 5px 15px rgba(54, 209, 220, 0.3);
+
+    transition: 0.3s ease;
+}
+
+.cart-btn:hover{
+    transform: scale(1.05);
+}
