@@ -1,0 +1,16 @@
+/* .card-img-top{
+  height: 200px;
+  object-fit: contain;
+  background-color: azure;
+} */
+
+.card-title{
+              font-size:15px;
+}
+
+.text-warning i{
+  font-size: 14px;
+}
+del{
+  font-size: 14px;
+}
