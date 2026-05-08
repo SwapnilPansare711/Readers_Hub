@@ -1,9 +1,10 @@
-/* .card-img-top{
-  height: 200px;
+ /* .card-img-top{
+  
   object-fit: contain;
-  background-color: azure;
-} */
+ 
+ } */
 
+ /* card title */
 .card-title{
               font-size:15px;
 }
@@ -11,10 +12,13 @@
 .text-warning i{
   font-size: 14px;
 }
+
+/* price */
 del{
   font-size: 14px;
 }
 
+/* card animation */
 .book-card{
     transition: all 0.4s ease;
    
@@ -25,6 +29,7 @@ del{
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* btn animation */
 .cart-btn{
    
     font-size: 15px;
