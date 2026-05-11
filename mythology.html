@@ -24,161 +24,134 @@
   </head>
 
   <body>
-      <!-- Navbar Start -->
+    <!-- Navbar Start -->
 
-  <header class="sticky-top">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <!-- Logo -->
 
-    <nav class="navbar navbar-expand-lg custom-navbar">
+          <a class="navbar-brand logo-text" href="index.html"> ReadersHub </a>
 
-      <div class="container-fluid">
+          <!-- Toggle Button -->
 
-        <!-- Logo -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <a class="navbar-brand logo-text" href="index.html">
-          ReadersHub
-        </a>
+          <!-- Navbar Content -->
 
-        <!-- Toggle Button -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Menu -->
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-        >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"> Home </a>
+              </li>
 
-          <span class="navbar-toggler-icon"></span>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About Us </a>
+              </li>
 
-        </button>
+              <!-- Dropdown -->
 
-        <!-- Navbar Content -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Categories
+                </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Motivational.html">
+                      Motivational & Self-help
+                    </a>
+                  </li>
 
-          <!-- Menu -->
+                  <li>
+                    <a class="dropdown-item" href="mythology.html">
+                      Mythology
+                    </a>
+                  </li>
 
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+                  <li>
+                    <a class="dropdown-item" href="fiction_books.html">
+                      Fiction Books
+                    </a>
+                  </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                Home
-              </a>
-            </li>
+                  <li>
+                    <a class="dropdown-item" href="competitive_exams.html">
+                      Competitive Exams
+                    </a>
+                  </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">
-                About Us
-              </a>
-            </li>
+                  <li>
+                    <a class="dropdown-item" href="non_fiction.html">
+                      Non Fiction
+                    </a>
+                  </li>
+                </ul>
+              </li>
 
-            <!-- Dropdown -->
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html"> Contact Us </a>
+              </li>
+            </ul>
 
-            <li class="nav-item dropdown">
+            <!-- Search Bar -->
 
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-              >
-                Categories
-              </a>
+            <form class="search-box" role="search">
+              <div class="search-wrapper">
+                <!-- Search Icon -->
+                <i class="bi bi-search search-icon"></i>
 
-              <ul class="dropdown-menu">
+                <!-- Input -->
+                <input
+                  type="search"
+                  class="search-input"
+                  placeholder="Search books..."
+                />
 
-                <li>
-                  <a class="dropdown-item" href="Motivational.html">
-                    Motivational & Self-help
-                  </a>
-                </li>
+                <!-- Mic Icon -->
+                <button class="mic-btn" type="button">
+                  <i class="bi bi-mic-fill"></i>
+                </button>
+              </div>
+            </form>
+            <!-- search end here -->
+            <!-- Icons -->
 
-                <li>
-                  <a class="dropdown-item" href="mythology.html">
-                    Mythology
-                  </a>
-                </li>
+            <div class="d-flex align-items-center ms-3 icon-box">
+              <i class="bi bi-person-circle me-3"></i>
 
-                <li>
-                  <a class="dropdown-item" href="fiction_books.html">
-                    Fiction Books
-                  </a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="competitive_exams.html">
-                    Competitive Exams
-                  </a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="non_fiction.html">
-                    Non Fiction
-                  </a>
-                </li>
-
-              </ul>
-
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="Contact.html">
-                Contact Us
-              </a>
-            </li>
-
-          </ul>
-
-          <!-- Search Bar -->
-
-<form class="search-box" role="search">
-
-  <div class="search-wrapper">
-
-    <!-- Search Icon -->
-    <i class="bi bi-search search-icon"></i>
-
-    <!-- Input -->
-    <input
-      type="search"
-      class="search-input"
-      placeholder="Search books..."
-    >
-
-    <!-- Mic Icon -->
-    <button class="mic-btn" type="button">
-      <i class="bi bi-mic-fill"></i>
-    </button>
-
-  </div>
-
-</form>
-<!-- search end here -->
-          <!-- Icons -->
-
-          <div class="d-flex align-items-center ms-3 icon-box">
-
-          <i class="bi bi-person-circle me-3"></i>
-
-            <i class="bi bi-cart"></i>
-
+              <i class="bi bi-cart"></i>
+            </div>
           </div>
-
         </div>
+      </nav>
+    </header>
 
-      </div>
+    <!-- Navbar End -->
 
-    </nav>
-
-  </header>
-
-  <!-- Navbar End -->
-
-
-     <!-- Banner start -->
+    <!-- Banner start -->
     <section class="container-fluid p-0">
       <div class="banner">
         <div class="hero-section">
-    <img src="images/R_mythology_banner.png" class="hero-img img-fluid" alt="">
+          <img
+            src="images/R_mythology_banner.png"
+            class="hero-img img-fluid"
+            alt=""
+          />
         </div>
       </div>
     </section>
@@ -328,162 +301,139 @@
         <!-- 4th BOOK -->
 
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card mt-5 book-card">
+            <!-- Book Image -->
+            <img
+              src="images/R_Mythology_img4.png"
+              class="card-img-top img-fluid"
+              alt="Lessons from Mahabharta"
+            />
 
-      <div class="card mt-5 book-card">
+            <!-- Card Body -->
+            <div class="card-body d-flex flex-column">
+              <!-- Book Title -->
+              <h6 class="card-title">Lessons Mahabharta</h6>
 
-        <!-- Book Image -->
-        <img
-          src="images/R_Mythology_img4.png"
-          class="card-img-top img-fluid"
-          alt="Lessons from Mahabharta"
-        />
+              <!-- Rating -->
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
 
-        <!-- Card Body -->
-        <div class="card-body d-flex flex-column">
+                <span class="text-muted small">(4.0)</span>
+              </div>
 
-          <!-- Book Title -->
-          <h6 class="card-title">
-            Lessons Mahabharta
-          </h6>
+              <!-- Price -->
+              <p class="mb-3">
+                <del class="text-muted">₹450</del>
 
-          <!-- Rating -->
-          <div class="text-warning mb-2">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star"></i>
+                <span class="fw-bold text-danger ms-2"> ₹400 </span>
+              </p>
 
-            <span class="text-muted small">(4.0)</span>
+              <!-- Button -->
+              <a
+                href="#"
+                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
+              >
+                <i class="bi bi-cart-plus"></i>
+                Add to Cart
+              </a>
+            </div>
           </div>
-
-          <!-- Price -->
-          <p class="mb-3">
-            <del class="text-muted">₹450</del>
-
-            <span class="fw-bold text-danger ms-2">
-              ₹400
-            </span>
-          </p>
-
-          <!-- Button -->
-          <a
-            href="#"
-            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-            <i class="bi bi-cart-plus"></i>
-            Add to Cart
-          </a>
-
         </div>
-      </div>
+        <!-- 5th BOOK -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card mt-5 book-card">
+            <!-- Book Image -->
+            <img
+              src="images/R_motivation_img1.png"
+              class="card-img-top img-fluid"
+              alt="Dopamine Detox"
+            />
 
-    </div>
-    <!-- 5th BOOK -->
-     <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <!-- Card Body -->
+            <div class="card-body d-flex flex-column">
+              <!-- Book Title -->
+              <h6 class="card-title">Dopamine Detox</h6>
 
-      <div class="card mt-5 book-card">
+              <!-- Rating -->
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
 
-        <!-- Book Image -->
-        <img
-          src="images/R_motivation_img1.png"
-          class="card-img-top img-fluid"
-          alt="Dopamine Detox"
-        />
+                <span class="text-muted small">(3.0)</span>
+              </div>
 
-        <!-- Card Body -->
-        <div class="card-body d-flex flex-column">
+              <!-- Price -->
+              <p class="mb-3">
+                <del class="text-muted">₹499</del>
 
-          <!-- Book Title -->
-          <h6 class="card-title">
-            Dopamine Detox
-          </h6>
+                <span class="fw-bold text-danger ms-2"> ₹300 </span>
+              </p>
 
-          <!-- Rating -->
-          <div class="text-warning mb-2">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-
-            <span class="text-muted small">(3.0)</span>
+              <!-- Button -->
+              <a
+                href="#"
+                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
+              >
+                <i class="bi bi-cart-plus"></i>
+                Add to Cart
+              </a>
+            </div>
           </div>
-
-          <!-- Price -->
-          <p class="mb-3">
-            <del class="text-muted">₹499</del>
-
-            <span class="fw-bold text-danger ms-2">
-              ₹300
-            </span>
-          </p>
-
-          <!-- Button -->
-          <a
-            href="#"
-            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-            <i class="bi bi-cart-plus"></i>
-            Add to Cart
-          </a>
-
         </div>
-      </div>
 
-    </div>
+        <!-- 6th BOOK -->
 
-<!-- 6th BOOK -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <div class="card mt-5 book-card">
+            <!-- Book Image -->
+            <img
+              src="images/R_Mythology_img6.png"
+              class="card-img-top img-fluid"
+              alt="Tantra & Buddhism"
+            />
 
- <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <!-- Card Body -->
+            <div class="card-body d-flex flex-column">
+              <!-- Book Title -->
+              <h6 class="card-title">Tantra & Buddhism</h6>
 
-      <div class="card mt-5 book-card">
+              <!-- Rating -->
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
 
-        <!-- Book Image -->
-        <img
-          src="images/R_Mythology_img6.png"
-          class="card-img-top img-fluid"
-          alt="Tantra & Buddhism"
-        />
+                <span class="text-muted small">(3.0)</span>
+              </div>
 
-        <!-- Card Body -->
-        <div class="card-body d-flex flex-column">
+              <!-- Price -->
+              <p class="mb-3">
+                <del class="text-muted">₹300</del>
 
-          <!-- Book Title -->
-          <h6 class="card-title">
-            Tantra & Buddhism
-          </h6>
+                <span class="fw-bold text-danger ms-2"> ₹250 </span>
+              </p>
 
-          <!-- Rating -->
-          <div class="text-warning mb-2">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star"></i>
-            <i class="bi bi-star"></i>
-
-            <span class="text-muted small">(3.0)</span>
+              <!-- Button -->
+              <a
+                href="#"
+                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
+              >
+                <i class="bi bi-cart-plus"></i>
+                Add to Cart
+              </a>
+            </div>
           </div>
-
-          <!-- Price -->
-          <p class="mb-3">
-            <del class="text-muted">₹300</del>
-
-            <span class="fw-bold text-danger ms-2">
-              ₹250
-            </span>
-          </p>
-
-          <!-- Button -->
-          <a
-            href="#"
-            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-            <i class="bi bi-cart-plus"></i>
-            Add to Cart
-          </a>
-
         </div>
-      </div>
-    </div>
-      <!-- BOOK 7th -->
+        <!-- BOOK 7th -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <div class="card mt-5 book-card">
             <!-- Book Image -->
@@ -527,7 +477,7 @@
             </div>
           </div>
         </div>
-<!-- BOOK 8th -->
+        <!-- BOOK 8th -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <div class="card mt-5 book-card">
             <!-- Book Image -->
@@ -540,8 +490,8 @@
             <!-- Card Body -->
             <div class="card-body d-flex flex-column">
               <!-- Book Title -->
-             
-              <h6 class="card-title" > Excellence Pranay</h6>
+
+              <h6 class="card-title">Excellence Pranay</h6>
 
               <!-- Rating -->
               <div class="text-warning mb-2">
@@ -572,7 +522,7 @@
             </div>
           </div>
         </div>
-<!-- BOOK 9th -->
+        <!-- BOOK 9th -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
           <div class="card mt-5 book-card">
             <!-- Book Image -->
@@ -1111,8 +1061,6 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
 
