@@ -24,90 +24,166 @@
   </head>
 
   <body>
-    <!-- Navbar start  -->
+      <!-- Navbar Start -->
 
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="images/logo.png"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            ReaderHub
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle active text-danger"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Categories
-                </a>
-                <ul class="dropdown-menu">
-                                 <li><a class="dropdown-item" href="Motivational.html">Motivational & Self-help</a></li>
-                                  <li><a class="dropdown-item" href="mythology.html">Mythology</a></li>
-                                <li><a class="dropdown-item" href="fiction_books.html">Fiction Books</a></li>
-                                 <li><a class="dropdown-item" href="competitive_exams.html">Competitive Exams</a></li>
-                                <li><a class="dropdown-item" href="non_fiction.html">Non Fiction</a></li>
-                              
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
+  <header class="sticky-top">
 
-                            </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Contact.html">Contact Us</a>
-              </li>
-            </ul>
-            <form class="d-flex mx-auto" role="search" style="width: 400px">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search books.."
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-danger" type="submit">
-                Search
-              </button>
-            </form>
-            <div class="d-flex align-items-center ms-auto">
-              <i class="bi bi-heart fs-5 text-white me-3"></i>
-              <i class="bi bi-cart fs-5 text-white"></i>
-            </div>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+
+      <div class="container-fluid">
+
+        <!-- Logo -->
+
+        <a class="navbar-brand logo-text" href="index.html">
+          ReaderHub
+        </a>
+
+        <!-- Toggle Button -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Navbar Content -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Menu -->
+
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                About Us
+              </a>
+            </li>
+
+            <!-- Dropdown -->
+
+            <li class="nav-item dropdown">
+
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Categories
+              </a>
+
+              <ul class="dropdown-menu">
+
+                <li>
+                  <a class="dropdown-item" href="Motivational.html">
+                    Motivational & Self-help
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="mythology.html">
+                    Mythology
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="fiction_books.html">
+                    Fiction Books
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="competitive_exams.html">
+                    Competitive Exams
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="non_fiction.html">
+                    Non Fiction
+                  </a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">
+                Contact Us
+              </a>
+            </li>
+
+          </ul>
+
+          <!-- Search Bar -->
+
+<form class="search-box" role="search">
+
+  <div class="search-wrapper">
+
+    <!-- Search Icon -->
+    <i class="bi bi-search search-icon"></i>
+
+    <!-- Input -->
+    <input
+      type="search"
+      class="search-input"
+      placeholder="Search books..."
+    >
+
+    <!-- Mic Icon -->
+    <button class="mic-btn" type="button">
+      <i class="bi bi-mic-fill"></i>
+    </button>
+
+  </div>
+
+</form>
+<!-- search end here -->
+          <!-- Icons -->
+
+          <div class="d-flex align-items-center ms-3 icon-box">
+
+          <i class="bi bi-person-circle me-3"></i>
+
+            <i class="bi bi-cart"></i>
+
           </div>
-        </div>
-      </nav>
-    </header>
 
-    <!-- Navbar End -->
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-- Navbar End -->
+
+
+     <!-- Banner start -->
+    <section class="container-fluid p-0">
+      <div class="banner">
+        <div class="hero-section">
+    <img src="images/R_mythology_banner.png" class="hero-img img-fluid" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner ends -->
 
     <!-- mythology books start -->
 
@@ -267,7 +343,7 @@
 
           <!-- Book Title -->
           <h6 class="card-title">
-            Lessons from Mahabharta
+            Lessons Mahabharta
           </h6>
 
           <!-- Rating -->
