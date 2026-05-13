@@ -106,11 +106,11 @@
 }
 
 .mot {
-    background: #198754;
+    background: #bef00c;
 }
 
 .mot::before {
-    background: #198754;
+    background: #49ea04;
 }
 
 .spi {
@@ -218,3 +218,25 @@
 }
 
 /* VIEW MORE BUTTON END */
+
+
+/* BEST SELLER TAG */
+
+.best-seller {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    background: hsl(358, 96%, 49%);
+    color: white;
+    
+    padding: 5px 12px;
+    border-radius: 20px;
+    
+    font-size: 14px;
+    font-weight: bold;
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* TAG END HERE */
