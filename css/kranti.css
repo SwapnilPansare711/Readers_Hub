@@ -10,3 +10,147 @@
 .terms{
     text-align: center;
 }
+
+/* Hero Section */
+
+.hero-section{
+    height: 70vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    
+    url('../images/book-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Stats */
+
+.stats-section{
+    background: #fff8f0;
+}
+
+.stats-section h2{
+    color: #6D214F;
+    font-weight: bold;
+}
+
+/* Cards */
+
+.mission-card{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.mission-card:hover{
+    transform: translateY(-10px);
+}
+
+.mission-card i{
+    font-size: 40px;
+    color: #6D214F;
+}
+
+/* Testimonials */
+
+.testimonial-card{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+.testimonial-card:hover{
+    transform: scale(1.03);
+}
+
+/* About Images */
+
+.about img{
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.about img:hover{
+    transform: scale(1.03);
+}
+
+
+/* About Us Animation */
+/* ABOUT SECTION */
+.about-section{
+    padding: 50px;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+}
+
+/* Paragraph Box */
+.about-text{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.4s;
+    animation: fadeUp 1.5s ease;
+}
+
+.about-text:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Paragraph Style */
+.about-text p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #444;
+    text-align: justify;
+    transition: 0.3s;
+}
+
+.about-text p:hover{
+    color: #6a11cb;
+}
+
+/* Image Design */
+.about-img{
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: zoomIn 2s ease;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+/* Image Hover Effect */
+.about-img:hover img{
+    transform: scale(1.08) rotate(2deg);
+}
+
+/* Fade Animation */
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Zoom Animation */
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
