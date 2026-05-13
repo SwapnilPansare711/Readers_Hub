@@ -14,147 +14,196 @@
 
     <!-- CSS -->
     <link href="css/Swapnil.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/rutuja.css" />
 
     <style>
-       /* SECTION HEADER NAME START */
+        /* SECTION HEADER NAME START */
 
-/* CENTER THE BOX */
+        /* CENTER THE BOX */
 
-.heading-wrapper{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:50px 0;
-}
+        .heading-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+        }
 
-/* ANIMATED BOX */
+        /* ANIMATED BOX */
 
-.animated-box{
-  padding:20px 50px;
-  border-radius:15px;
-  background:linear-gradient(135deg, #ff6a00, #ee0979);
-  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+        .animated-box {
+            padding: 20px 50px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ff6a00, #ee0979);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
-  animation: floating 2s infinite alternate;
-  transition:0.4s;
-}
+            animation: floating 2s infinite alternate;
+            transition: 0.4s;
+        }
 
-/* HOVER EFFECT */
+        /* HOVER EFFECT */
 
-.animated-box:hover{
-  transform:scale(1.05);
-  box-shadow:0 12px 25px rgba(0,0,0,0.3);
-}
+        .animated-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
 
-/* HEADING */
+        /* HEADING */
 
-.animated-box h2{
-  color:white;
-  font-size:40px;
-  font-weight:bold;
-  letter-spacing:2px;
-  text-align:center;
-}
+        .animated-box h2 {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-align: center;
+        }
 
-/* ANIMATION */
+        /* ANIMATION */
 
-@keyframes floating{
+        @keyframes floating {
 
-  from{
-    transform:translateY(0px);
-  }
+            from {
+                transform: translateY(0px);
+            }
 
-  to{
-    transform:translateY(-10px);
-  }
-}
+            to {
+                transform: translateY(-10px);
+            }
+        }
 
-/* RESPONSIVE */
+        /* RESPONSIVE */
 
-@media(max-width:768px){
+        @media(max-width:768px) {
 
-  .animated-box{
-    padding:15px 25px;
-  }
+            .animated-box {
+                padding: 15px 25px;
+            }
 
-  .animated-box h2{
-    font-size:28px;
-  }
-}
+            .animated-box h2 {
+                font-size: 28px;
+            }
+        }
 
-/* SECTION HEADER NAME END */
-
-
+        /* SECTION HEADER NAME END */
     </style>
 
 
 </head>
 
 <body>
-
-    <!-- Navbar start  -->
+    
+    <!-- Navbar Start -->
 
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    ReaderHub
-                </a>
+                <!-- Logo -->
+
+                <a class="navbar-brand logo-text" href="index.html"> ReadersHub </a>
+
+                <!-- Toggle Button -->
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Navbar Content -->
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+                    <!-- Menu -->
+
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
                         <li class="nav-item">
-                            <a class="nav-link active text-danger" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html"> Home </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.html"> About Us </a>
                         </li>
+
+                        <!-- Dropdown -->
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">
                                 Categories
                             </a>
+
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="Govermenttal.html">Govermental Jobs</a></li>
-                                <li><a class="dropdown-item" href="Motivational.html">Motivational & Self Help</a></li>
-                                <li><a class="dropdown-item" href="Religion.html">Religion & Spirituality</a></li>
-                                <li><a class="dropdown-item" href="Fiction.html">Fiction Books</a></li>
-                                <li><a class="dropdown-item" href="Non-Fiction.html">Non Fiction</a></li>
-                                <li><a class="dropdown-item" href="Childern.html">Childern Books</a></li>
-                                <li><a class="dropdown-item" href="Finance.html">Finance </a></li>
                                 <li>
-                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item" href="Motivational.html">
+                                        Motivational & Self-help
+                                    </a>
                                 </li>
 
+                                <li>
+                                    <a class="dropdown-item" href="mythology.html">
+                                        Mythology
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="fiction_books.html">
+                                        Fiction Books
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="competitive_exams.html">
+                                        Competitive Exams
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="non_fiction.html">
+                                        Non Fiction
+                                    </a>
+                                </li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">Contact Us</a>
+                            <a class="nav-link" href="Contact.html"> Contact Us </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="return & replacement.html">Return & Replacement</a>
+                         <li class="nav-item">
+                            <a class="nav-link active text-danger" href="return_replacement.html">Return & Replacement</a>
                         </li>
                     </ul>
-                    <form class="d-flex mx-auto" role="search" style="width: 400px;">
-                        <input class="form-control me-2" type="search" placeholder="Search books.."
-                            aria-label="Search" />
-                        <button class="btn btn-outline-danger" type="submit">Search</button>
+
+                    <!-- Search Bar -->
+
+                    <form class="search-box" role="search">
+                        <div class="search-wrapper">
+                            <!-- Search Icon -->
+                            <i class="bi bi-search search-icon"></i>
+
+                            <!-- Input -->
+                            <input type="search" class="search-input" placeholder="Search books..." />
+
+                            <!-- Mic Icon -->
+                            <button class="mic-btn" type="button">
+                                <i class="bi bi-mic-fill"></i>
+                            </button>
+                        </div>
                     </form>
-                    <div class="d-flex align-items-center ms-auto">
-                        <i class="bi bi-heart fs-5 text-white me-3"></i>
-                        <i class="bi bi-cart fs-5 text-white"></i>
+                    <!-- search end here -->
+                    <!-- Icons -->
+
+                    <!-- Icons -->
+
+                    <div class="d-flex align-items-center ms-3 icon-box">
+                        <i class="bi bi-person-circle me-3"></i>
+
+                        <i class="bi bi-cart"></i>
                     </div>
+
                 </div>
+            </div>
             </div>
         </nav>
     </header>
 
     <!-- Navbar End -->
+
     <section>
         <div class="container text-center my-5">
 
@@ -166,7 +215,7 @@
 
                 <a href="motivational.html" class="category-circle mot">Motivational</a>
 
-                <a href="#spi" class="category-circle spi">Spiritual</a>
+                <a href="mythology.html" class="category-circle spi">Mythology</a>
 
                 <a href="#fic" class="category-circle fic">Fiction</a>
 
@@ -183,29 +232,165 @@
 
         <!-- SLIDER START -->
 
-        
-         <!-- SLIDER END -->
 
-         <hr>
+        <!-- SLIDER END -->
+
+        <hr>
 
 
 
-                
-                <!-- SECTION HEADING -->
 
-                <div class="heading-wrapper">
+        <!-- SECTION HEADING -->
 
-                    <div class="animated-box">
-                        <h2>📚 Motivational Books</h2>
+        <div class="heading-wrapper">
+
+            <div class="animated-box">
+                <h2>📚 Motivational Books</h2>
+            </div>
+
+        </div>
+
+        <!-- SECTION HEADING END -->
+
+        <!--BOOKS START -->
+
+        <!--BOOK 1 START-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mt-5 book-card">
+                        <img src="images/R_motivation_img1.png" class="card-img-top img-fluid" />
+                        <div class="card-body">
+                            <h6 class="card-title">Dopamine Detox</h6>
+
+                            <!-- Reating -->
+                            <div class="text-warning mb-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <span class="text-muted small">(3.0)</span>
+                            </div>
+
+                            <!-- price -->
+                            <p class="mb-2">
+                                <del class="text-muted">₹499</del>
+                                <span class="fw-bold text-danger">₹300</span>
+                            </p>
+
+                            <!-- add to cart -->
+                            <a href="#"
+                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                <i class="bi bi-cart-plus"></i>
+                                Add to Cart
+                            </a>
+                        </div>
                     </div>
-
                 </div>
 
-                <!-- SECTION HEADING END -->
+                <!-- BOOK 2 START -->
 
-                 <!--BOOKS START -->
+                <div class="col-md-3">
+                    <div class="card mt-5 book-card">
+                        <img src="images/R_motivation_img2.png" class="card-img-top" />
+                        <div class="card-body">
+                            <h6 class="card-title">Rich Dad Poor Dad</h6>
 
-                <!--BOOK 1 START-->
+                            <!-- Reating -->
+                            <div class="text-warning mb-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <span class="text-muted small">(3.0)</span>
+                            </div>
+
+                            <!-- price -->
+                            <p class="mb-2">
+                                <del class="text-muted">₹600</del>
+                                <span class="fw-bold text-danger">₹400</span>
+                            </p>
+
+                            <!-- add to cart -->
+                            <a href="#"
+                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                <i class="bi bi-cart-plus"></i>
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mt-5 book-card">
+                        <img src="images/R_motivation_img3.png" class="card-img-top" />
+                        <div class="card-body">
+                            <h6 class="card-title">The Art Of Laziness</h6>
+
+                            <!-- Reating -->
+                            <div class="text-warning mb-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <span class="text-muted small">(4.0)</span>
+                            </div>
+
+                            <!-- price -->
+                            <p class="mb-2">
+                                <del class="text-muted">₹450</del>
+                                <span class="fw-bold text-danger">₹200</span>
+                            </p>
+
+                            <!-- add to cart -->
+                            <a href="#"
+                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                <i class="bi bi-cart-plus"></i>
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mt-5 book-card">
+                        <img src="images/R_motivation_img4.png" class="card-img-top" />
+                        <div class="card-body">
+                            <h6 class="card-title">Do It Today</h6>
+
+                            <!-- Reating -->
+                            <div class="text-warning mb-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <span class="text-muted small">(4.0)</span>
+                            </div>
+
+                            <!-- price -->
+                            <p class="mb-2">
+                                <del class="text-muted">₹430</del>
+                                <span class="fw-bold text-danger">₹299</span>
+                            </p>
+
+                            <!-- add to cart -->
+                            <a href="#"
+                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                <i class="bi bi-cart-plus"></i>
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- second book row -->
+
 
                 <div class="container">
                     <div class="row">
@@ -240,8 +425,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- BOOK 2 START -->
 
                         <div class="col-md-3">
                             <div class="card mt-5 book-card">
@@ -339,161 +522,27 @@
                             </div>
                         </div>
 
+                        <!-- READ MORE BUTTON -->
 
-                        <!-- second book row -->
-
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <img src="images/R_motivation_img1.png" class="card-img-top img-fluid" />
-                                        <div class="card-body">
-                                            <h6 class="card-title">Dopamine Detox</h6>
-
-                                            <!-- Reating -->
-                                            <div class="text-warning mb-1">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <i class="bi bi-star"></i>
-                                                <span class="text-muted small">(3.0)</span>
-                                            </div>
-
-                                            <!-- price -->
-                                            <p class="mb-2">
-                                                <del class="text-muted">₹499</del>
-                                                <span class="fw-bold text-danger">₹300</span>
-                                            </p>
-
-                                            <!-- add to cart -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <img src="images/R_motivation_img2.png" class="card-img-top" />
-                                        <div class="card-body">
-                                            <h6 class="card-title">Rich Dad Poor Dad</h6>
-
-                                            <!-- Reating -->
-                                            <div class="text-warning mb-1">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <span class="text-muted small">(3.0)</span>
-                                            </div>
-
-                                            <!-- price -->
-                                            <p class="mb-2">
-                                                <del class="text-muted">₹600</del>
-                                                <span class="fw-bold text-danger">₹400</span>
-                                            </p>
-
-                                            <!-- add to cart -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <img src="images/R_motivation_img3.png" class="card-img-top" />
-                                        <div class="card-body">
-                                            <h6 class="card-title">The Art Of Laziness</h6>
-
-                                            <!-- Reating -->
-                                            <div class="text-warning mb-1">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <span class="text-muted small">(4.0)</span>
-                                            </div>
-
-                                            <!-- price -->
-                                            <p class="mb-2">
-                                                <del class="text-muted">₹450</del>
-                                                <span class="fw-bold text-danger">₹200</span>
-                                            </p>
-
-                                            <!-- add to cart -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <img src="images/R_motivation_img4.png" class="card-img-top" />
-                                        <div class="card-body">
-                                            <h6 class="card-title">Do It Today</h6>
-
-                                            <!-- Reating -->
-                                            <div class="text-warning mb-1">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <span class="text-muted small">(4.0)</span>
-                                            </div>
-
-                                            <!-- price -->
-                                            <p class="mb-2">
-                                                <del class="text-muted">₹430</del>
-                                                <span class="fw-bold text-danger">₹299</span>
-                                            </p>
-
-                                            <!-- add to cart -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- READ MORE BUTTON -->
-
-<div class="btn-container">
-  <button class="read-more-btn">
-    View More
-  </button>
-</div>
-<hr>
+                        <div class="btn-container">
+                            <button class="read-more-btn">
+                                View More
+                            </button>
+                        </div>
+                        <hr>
 
 
-                                 <!-- SECTION HEADING -->
+                        <!-- SECTION HEADING -->
 
-                <div class="heading-wrapper">
+                        <div class="heading-wrapper">
 
-                    <div class="animated-box">
-                        <h2>📚 Mythology Books</h2>
-                    </div>
+                            <div class="animated-box">
+                                <h2>📚 Mythology Books</h2>
+                            </div>
 
-                </div>
+                        </div>
 
-                <!-- SECTION HEADING END -->
+                        <!-- SECTION HEADING END -->
 
 
 
