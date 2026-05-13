@@ -106,11 +106,11 @@
 }
 
 .mot {
-    background: #198754;
+    background: #bef00c;
 }
 
 .mot::before {
-    background: #198754;
+    background: #49ea04;
 }
 
 .spi {
