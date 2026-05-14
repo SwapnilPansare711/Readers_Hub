@@ -98,15 +98,15 @@
 
 /* Colors + Glow */
 .gov {
-    background: #0d6efd;
+    background: #2563eb;
 }
 
 .gov::before {
-    background: #0d6efd;
+    background: #7c3aed;
 }
 
 .mot {
-    background: #bef00c;
+    background: #4509de;
 }
 
 .mot::before {
