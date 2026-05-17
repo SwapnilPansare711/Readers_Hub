@@ -2,686 +2,775 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- Icon Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Icon Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- CSS -->
-    <link href="css/Swapnil.css" rel="stylesheet" type="text/css" />
-     <link rel="stylesheet" href="css/rutuja.css" />
+  <!-- CSS -->
+  <link href="css/Swapnil.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/rutuja.css" />
 
- 
+  <style>
+    body {
+      background: #f4f7fb;
+      overflow-x: hidden;
+    }
+
+    /* Section */
+    .service-section {
+      height: 220px;
+    }
+
+    /* Animated Title */
+    .animated-title {
+      display: flex;
+      gap: 10px;
+      font-size: 75px;
+      font-weight: 900;
+      letter-spacing: 8px;
+    }
+
+    /* Each Letter */
+    .animated-title span {
+      display: inline-block;
+
+      background: linear-gradient(135deg, #00c6ff, #0072ff, #8e2de2);
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      animation: bounce 1.5s infinite;
+      text-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
+    }
+
+    /* Delay Animation */
+    .animated-title span:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .animated-title span:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .animated-title span:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    .animated-title span:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+
+    .animated-title span:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+
+    .animated-title span:nth-child(6) {
+      animation-delay: 0.5s;
+    }
+
+    .animated-title span:nth-child(7) {
+      animation-delay: 0.6s;
+    }
+
+    .animated-title span:nth-child(8) {
+      animation-delay: 0.7s;
+    }
+
+    /* Bounce Animation */
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      20% {
+        transform: translateY(-25px) scale(1.1);
+      }
+
+      40% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+
+    /* Mobile Responsive */
+    @media(max-width:768px) {
+
+      .animated-title {
+        font-size: 45px;
+        gap: 5px;
+        letter-spacing: 3px;
+      }
+
+
+
+    }
+  </style>
+
 </head>
 
 <body>
 
   <!-- Navbar Start -->
 
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container-fluid">
-          <!-- Logo -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <!-- Logo -->
 
-          <a class="navbar-brand logo-text" href="index.html"> ReadersHub </a>
+        <a class="navbar-brand logo-text" href="index.html"> ReadersHub </a>
 
-          <!-- Toggle Button -->
+        <!-- Toggle Button -->
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Navbar Content -->
+        <!-- Navbar Content -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Menu -->
 
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"> Home </a>
-              </li>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> About Us </a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About Us </a>
+            </li>
 
-              <!-- Dropdown -->
+            <!-- Dropdown -->
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle active"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Categories
-                </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                Categories
+              </a>
 
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="Motivational.html">
-                      Motivational & Self-help
-                    </a>
-                  </li>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="Motivational.html">
+                    Motivational & Self-help
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="mythology.html">
-                      Mythology
-                    </a>
-                  </li>
+                <li>
+                  <a class="dropdown-item" href="mythology.html">
+                    Mythology
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="fiction_books.html">
-                      Fiction Books
-                    </a>
-                  </li>
+                <li>
+                  <a class="dropdown-item" href="fiction_books.html">
+                    Fiction Books
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="competitive_exams.html">
-                      Competitive Exams
-                    </a>
-                  </li>
+                <li>
+                  <a class="dropdown-item" href="competitive_exams.html">
+                    Competitive Exams
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="non_fiction.html">
-                      Non Fiction
-                    </a>
-                  </li>
-                </ul>
-              </li>
+                <li>
+                  <a class="dropdown-item" href="non_fiction.html">
+                    Non Fiction
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="Contact.html"> Contact Us </a>
-              </li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html"> Contact Us </a>
+            </li>
+          </ul>
 
-            <!-- Search Bar -->
+          <!-- Search Bar -->
 
-            <form class="search-box" role="search">
-              <div class="search-wrapper">
-                <!-- Search Icon -->
-                <i class="bi bi-search search-icon"></i>
+          <form class="search-box" role="search">
+            <div class="search-wrapper">
+              <!-- Search Icon -->
+              <i class="bi bi-search search-icon"></i>
 
-                <!-- Input -->
-                <input
-                  type="search"
-                  class="search-input"
-                  placeholder="Search books..."
-                />
+              <!-- Input -->
+              <input type="search" class="search-input" placeholder="Search books..." />
 
-                <!-- Mic Icon -->
-                <button class="mic-btn" type="button">
-                  <i class="bi bi-mic-fill"></i>
-                </button>
-              </div>
-            </form>
-            <!-- search end here -->
-            <!-- Icons -->
-
-           <!-- Icons -->
-
-            <div class="d-flex align-items-center ms-3 icon-box">
-              <i class="bi bi-person-circle me-3"></i>
-
-              <i class="bi bi-cart"></i>
+              <!-- Mic Icon -->
+              <button class="mic-btn" type="button">
+                <i class="bi bi-mic-fill"></i>
+              </button>
             </div>
+          </form>
+          <!-- search end here -->
+          <!-- Icons -->
 
-</div>
+          <!-- Icons -->
+
+          <div class="d-flex align-items-center ms-3 icon-box">
+            <i class="bi bi-person-circle me-3"></i>
+
+            <i class="bi bi-cart"></i>
           </div>
+
         </div>
-      </nav>
-    </header>
+      </div>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Navbar End -->
+  <!-- Navbar End -->
 
 
 
-    
 
-            
-<div class="container text-center my-5">
 
-  <h2 class="text-white mb-4">📚 Book Categories</h2>
 
-  <div class="d-flex justify-content-center gap-3 flex-wrap">
+  <div class="container text-center my-5">
 
-    <a href="#gov" class="category-circle gov">Government</a>
+    <h2 class="text-white mb-4">📚 Book Categories</h2>
 
-    <a href="#mot" class="category-circle mot">Motivational</a>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
 
-    <a href="#spi" class="category-circle spi">Spiritual</a>
+      <a href="#gov" class="category-circle gov">Government</a>
 
-    <a href="#fic" class="category-circle fic">Fiction</a>
+      <a href="#mot" class="category-circle mot">Motivational</a>
 
-    <a href="#non" class="category-circle non">Non-Fiction</a>
+      <a href="#spi" class="category-circle spi">Spiritual</a>
 
-    <a href="#child" class="category-circle child">Children</a>
+      <a href="#fic" class="category-circle fic">Fiction</a>
 
-    <a href="#finance" class="category-circle finance">Finance</a>
+      <a href="#non" class="category-circle non">Non-Fiction</a>
+
+      <a href="#child" class="category-circle child">Children</a>
+
+      <a href="#finance" class="category-circle finance">Finance</a>
+
+    </div>
 
   </div>
 
-</div>
-
-<section>
+  <section>
     <!-- about page -->
-     <!-- About Start -->
+    <!-- About Start -->
     <main>
-        <section class="mt-4 p-5">
-            <div class="container">
-                <h1 class="text-center mb-4">About Us</h1>
-                <!-- <div class="row">
+      <section class="mt-4 p-5">
+        <div class="container">
+          <h1 class="text-center mb-4">About Us</h1>
+          <!-- <div class="row">
                     <div class="col-md-12">
                         <img class="img-fluid" src="images/Aboutpageimg.jpg" />
                     </div>
                 </div> -->
+          <div class="row">
+            <div class="col-md-8">
+              <p>Welcome to Readers Hub, your ultimate destination for everything books! We are passionate
+                about connecting readers with stories that inspire, educate, and entertain.</p>
+
+              <p>In today’s fast-moving digital world, books continue to hold a special place in shaping imagination,
+                building knowledge, and encouraging personal growth. At Readers Hub, we believe that reading is more
+                than just a hobby; it is a powerful habit that helps individuals grow intellectually, emotionally, and
+                creatively. Whether you are a student searching for academic resources, a professional looking for
+                self-improvement books, or a passionate reader who loves fiction and storytelling, Readers Hub has
+                something valuable for everyone.</p>
+
+              <p>At Readers Hub, we believe that books have the power to transform lives. Whether you enjoy
+                fiction, non-fiction, academic resources, or self-development books, our carefully curated
+                collection is designed to meet the needs of every reader.</p>
+            </div>
+            <div class="col-md-4 about">
+              <img class="img-fluid" src="images/About_01-6.png" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 about">
+              <img class="img-fluid" src="images/About_02-6.png" />
+            </div>
+            <div class="col-md-8">
+              <p>Our mission is to create a vibrant community where book lovers can explore new ideas,
+                discover talented authors, and develop a lifelong love for reading. We strive to make books
+                accessible, affordable, and enjoyable for everyone.</p>
+
+              <p>Readers Hub is more than just a bookstore — it is a place where imagination meets knowledge.
+                From bestselling novels to hidden literary gems, we offer a diverse range of books for
+                readers of all ages and interests.</p>
+
+              <p>At Readers Hub, customer satisfaction is one of our highest priorities. We are committed to delivering
+                excellent service, reliable support, and a trustworthy experience for every visitor. We value every
+                customer and continuously work to improve our platform to meet the expectations of today’s readers.</p>
+
+              <p>Join us on this exciting journey of reading and discovery. Let Readers Hub be your trusted
+                companion in the wonderful world of books.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About End -->
+      <hr>
+  </section>
+
+
+  <section class="service-section d-flex justify-content-center align-items-center ">
+
+    <h1 class="animated-title ">
+      <span>S</span>
+      <span>E</span>
+      <span>R</span>
+      <span>V</span>
+      <span>I</span>
+      <span>C</span>
+      <span>E</span>
+      <span>S</span>
+    </h1>
+
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card mt-5 book-card">
+          <img src="images/R_motivation_img1.png" class="card-img-top img-fluid" />
+          <div class="card-body">
+            <h6 class="card-title">Dopamine Detox</h6>
+
+            <!-- Reating -->
+            <div class="text-warning mb-1">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <span class="text-muted small">(3.0)</span>
+            </div>
+
+            <!-- price -->
+            <p class="mb-2">
+              <del class="text-muted">₹499</del>
+              <span class="fw-bold text-danger">₹300</span>
+            </p>
+
+            <!-- add to cart -->
+            <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+              <i class="bi bi-cart-plus"></i>
+              Add to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card mt-5 book-card">
+          <img src="images/R_motivation_img2.png" class="card-img-top" />
+          <div class="card-body">
+            <h6 class="card-title">Rich Dad Poor Dad</h6>
+            <span class="best-seller">Best Seller</span>
+
+            <!-- Reating -->
+            <div class="text-warning mb-1">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <span class="text-muted small">(3.0)</span>
+            </div>
+
+            <!-- price -->
+            <p class="mb-2">
+              <del class="text-muted">₹600</del>
+              <span class="fw-bold text-danger">₹400</span>
+            </p>
+
+            <!-- add to cart -->
+            <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+              <i class="bi bi-cart-plus"></i>
+              Add to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card mt-5 book-card">
+          <img src="images/R_motivation_img3.png" class="card-img-top" />
+          <div class="card-body">
+            <h6 class="card-title">The Art Of Laziness</h6>
+
+            <!-- Reating -->
+            <div class="text-warning mb-1">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <span class="text-muted small">(4.0)</span>
+            </div>
+
+            <!-- price -->
+            <p class="mb-2">
+              <del class="text-muted">₹450</del>
+              <span class="fw-bold text-danger">₹200</span>
+            </p>
+
+            <!-- add to cart -->
+            <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+              <i class="bi bi-cart-plus"></i>
+              Add to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card mt-5 book-card">
+          <img src="images/R_motivation_img4.png" class="card-img-top" />
+          <div class="card-body">
+            <h6 class="card-title">Do It Today</h6>
+
+            <!-- Reating -->
+            <div class="text-warning mb-1">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <span class="text-muted small">(4.0)</span>
+            </div>
+
+            <!-- price -->
+            <p class="mb-2">
+              <del class="text-muted">₹430</del>
+              <span class="fw-bold text-danger">₹299</span>
+            </p>
+
+            <!-- add to cart -->
+            <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+              <i class="bi bi-cart-plus"></i>
+              Add to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card mt-5 book-card">
+          <img src="images/R_motivation_img5.png" class="card-img-top" />
+          <div class="card-body">
+            <h6 class="card-title">The Art Of Beign Alone</h6>
+
+            <!-- Reating -->
+            <div class="text-warning mb-1">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <span class="text-muted small">(2.0)</span>
+            </div>
+
+            <!-- price -->
+            <p class="mb-2">
+              <del class="text-muted">₹360</del>
+              <span class="fw-bold text-danger">₹240</span>
+            </p>
+
+            <!-- add to cart -->
+            <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+              <i class="bi bi-cart-plus"></i>
+              Add to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card mt-5 book-card">
+          <img src="images/R_motivation_img6.png" class="card-img-top" />
+          <div class="card-body">
+            <h6 class="card-title">Who Move My Cheese</h6>
+
+            <!-- Reating -->
+            <div class="text-warning mb-1">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <span class="text-muted small">(4.0)</span>
+            </div>
+
+            <!-- price -->
+            <p class="mb-2">
+              <del class="text-muted">₹650</del>
+              <span class="fw-bold text-danger">₹499</span>
+            </p>
+
+            <!-- add to cart -->
+            <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+              <i class="bi bi-cart-plus"></i>
+              Add to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Books Start -->
+      <div class="container my-5">
+        <div class="row g-4">
+
+          <!-- Book Card 1 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <span class="badge">Bestseller</span>
+              <img src="images/Mera_Sangharsh SP.webp" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">The Great Gatsby</h5>
+                <p class="card-text">by F. Scott Fitzgerald</p>
+                <p class="text-primary fw-bold">₹299</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+                <!-- <a href="#" class="btn btn-primary w-100">Buy Now</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 2 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">Atomic Habits</h5>
+                <p class="card-text">by James Clear</p>
+                <p class="text-primary fw-bold">₹499</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 3 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <span class="badge">Bestseller</span>
+              <img src="images/Richdad_SWAPNIL.webp" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">Rich Dad Poor Dad</h5>
+                <p class="card-text">by Robert Kiyosaki</p>
+                <p class="text-primary fw-bold">₹399</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 4 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">Atomic Habits</h5>
+                <p class="card-text">by James Clear</p>
+                <p class="text-primary fw-bold">₹499</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Books Start -->
+      <div class="container my-5">
+        <div class="row g-4">
+
+          <!-- Book Card 1 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Mera_Sangharsh SP.webp" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">The Great Gatsby</h5>
+                <p class="card-text">by F. Scott Fitzgerald</p>
+                <p class="text-primary fw-bold">₹299</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 2 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">Atomic Habits</h5>
+                <p class="card-text">by James Clear</p>
+                <p class="text-primary fw-bold">₹499</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 3 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <span class="badge">Bestseller</span>
+              <img src="images/Richdad_SWAPNIL.webp" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">Rich Dad Poor Dad</h5>
+                <p class="card-text">by Robert Kiyosaki</p>
+                <p class="text-primary fw-bold">₹399</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Card 4 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
+              <div class="card-body">
+                <h5 class="card-title">Atomic Habits</h5>
+                <p class="card-text">by James Clear</p>
+                <p class="text-primary fw-bold">₹499</p>
+                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          </section>
+
+          <body>
+
+
+
+            <!-- Footer Start -->
+
+            <footer class="footer mt-5">
+              <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <p>Welcome to Readers Hub, your ultimate destination for everything books! We are passionate
-                            about connecting readers with stories that inspire, educate, and entertain.</p>
 
-                        <p>In today’s fast-moving digital world, books continue to hold a special place in shaping imagination, building knowledge, and encouraging personal growth. At Readers Hub, we believe that reading is more than just a hobby; it is a powerful habit that helps individuals grow intellectually, emotionally, and creatively. Whether you are a student searching for academic resources, a professional looking for self-improvement books, or a passionate reader who loves fiction and storytelling, Readers Hub has something valuable for everyone.</p>    
+                  <!-- About -->
+                  <div class="col-md-3">
+                    <h5>📖 ReadersHub</h5>
+                    <p>Your one-stop destination for novels, academic books, and bestsellers. Discover
+                      your next
+                      great read.</p>
+                  </div>
 
-                        <p>At Readers Hub, we believe that books have the power to transform lives. Whether you enjoy
-                            fiction, non-fiction, academic resources, or self-development books, our carefully curated
-                            collection is designed to meet the needs of every reader.</p>
+                  <!-- Categories -->
+                  <div class="col-md-3">
+                    <h5>Categories</h5>
+                    <a href="#">Fiction</a>
+                    <a href="#">Non-Fiction</a>
+                    <a href="#">Children</a>
+                    <a href="#">Education</a>
+                  </div>
+
+                  <!-- Quick Links -->
+                  <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Return & Replacement</a>
+                    <a href="#">Contact Us</a>
+                  </div>
+
+                  <!-- Newsletter -->
+                  <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="row">
+
+                      <!-- Social Icons -->
+                      <div class="col-md-1 social-icons mt-1">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                      </div>
+                      <div class=" col-md-1social-icons mt-1">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                      </div>
+                      <div class="col-md-1 social-icons mt-1">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                      </div>
                     </div>
-                    <div class="col-md-4 about">
-                        <img class="img-fluid" src="images/About_01-6.png" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 about">
-                        <img class="img-fluid" src="images/About_02-6.png" />
-                    </div>
-                    <div class="col-md-8">
-                        <p>Our mission is to create a vibrant community where book lovers can explore new ideas,
-                            discover talented authors, and develop a lifelong love for reading. We strive to make books
-                            accessible, affordable, and enjoyable for everyone.</p>
-
-                        <p>Readers Hub is more than just a bookstore — it is a place where imagination meets knowledge.
-                            From bestselling novels to hidden literary gems, we offer a diverse range of books for
-                            readers of all ages and interests.</p>
-
-                        <p>At Readers Hub, customer satisfaction is one of our highest priorities. We are committed to delivering excellent service, reliable support, and a trustworthy experience for every visitor. We value every customer and continuously work to improve our platform to meet the expectations of today’s readers.</p>    
-
-                        <p>Join us on this exciting journey of reading and discovery. Let Readers Hub be your trusted
-                            companion in the wonderful world of books.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About End -->
-</section>
- 
-        <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card mt-5 book-card">
-            <img
-              src="images/R_motivation_img1.png"
-              class="card-img-top img-fluid"
-            />
-            <div class="card-body">
-              <h6 class="card-title">Dopamine Detox</h6>
-
-              <!-- Reating -->
-              <div class="text-warning mb-1">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-muted small">(3.0)</span>
-              </div>
-
-              <!-- price -->
-              <p class="mb-2">
-                <del class="text-muted">₹499</del>
-                <span class="fw-bold text-danger">₹300</span>
-              </p>
-
-              <!-- add to cart -->
-              <a
-                href="#"
-                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
-              >
-                <i class="bi bi-cart-plus"></i>
-                Add to Cart
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card mt-5 book-card">
-            <img src="images/R_motivation_img2.png" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Rich Dad Poor Dad</h6>
-                <span class="best-seller">Best Seller</span>
-
-              <!-- Reating -->
-              <div class="text-warning mb-1">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-muted small">(3.0)</span>
-              </div>
-
-              <!-- price -->
-              <p class="mb-2">
-                <del class="text-muted">₹600</del>
-                <span class="fw-bold text-danger">₹400</span>
-              </p>
-
-              <!-- add to cart -->
-              <a
-                href="#"
-                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
-              >
-                <i class="bi bi-cart-plus"></i>
-                Add to Cart
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card mt-5 book-card">
-            <img src="images/R_motivation_img3.png" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">The Art Of Laziness</h6>
-
-              <!-- Reating -->
-              <div class="text-warning mb-1">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-muted small">(4.0)</span>
-              </div>
-
-              <!-- price -->
-              <p class="mb-2">
-                <del class="text-muted">₹450</del>
-                <span class="fw-bold text-danger">₹200</span>
-              </p>
-
-              <!-- add to cart -->
-              <a
-                href="#"
-                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
-              >
-                <i class="bi bi-cart-plus"></i>
-                Add to Cart
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card mt-5 book-card">
-            <img src="images/R_motivation_img4.png" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Do It Today</h6>
-
-              <!-- Reating -->
-              <div class="text-warning mb-1">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-muted small">(4.0)</span>
-              </div>
-
-              <!-- price -->
-              <p class="mb-2">
-                <del class="text-muted">₹430</del>
-                <span class="fw-bold text-danger">₹299</span>
-              </p>
-
-              <!-- add to cart -->
-              <a
-                href="#"
-                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
-              >
-                <i class="bi bi-cart-plus"></i>
-                Add to Cart
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card mt-5 book-card">
-            <img src="images/R_motivation_img5.png" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">The Art Of Beign Alone</h6>
-
-              <!-- Reating -->
-              <div class="text-warning mb-1">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-muted small">(2.0)</span>
-              </div>
-
-              <!-- price -->
-              <p class="mb-2">
-                <del class="text-muted">₹360</del>
-                <span class="fw-bold text-danger">₹240</span>
-              </p>
-
-              <!-- add to cart -->
-              <a
-                href="#"
-                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
-              >
-                <i class="bi bi-cart-plus"></i>
-                Add to Cart
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card mt-5 book-card">
-            <img src="images/R_motivation_img6.png" class="card-img-top" />
-            <div class="card-body">
-              <h6 class="card-title">Who Move My Cheese</h6>
-
-              <!-- Reating -->
-              <div class="text-warning mb-1">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star"></i>
-                <span class="text-muted small">(4.0)</span>
-              </div>
-
-              <!-- price -->
-              <p class="mb-2">
-                <del class="text-muted">₹650</del>
-                <span class="fw-bold text-danger">₹499</span>
-              </p>
-
-              <!-- add to cart -->
-              <a
-                href="#"
-                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn"
-              >
-                <i class="bi bi-cart-plus"></i>
-                Add to Cart
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-            <!-- Books Start -->
-            <div class="container my-5">
-                <div class="row g-4">
-
-                    <!-- Book Card 1 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <span class="badge">Bestseller</span>
-                            <img src="images/Mera_Sangharsh SP.webp" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">The Great Gatsby</h5>
-                                <p class="card-text">by F. Scott Fitzgerald</p>
-                                <p class="text-primary fw-bold">₹299</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-                                <!-- <a href="#" class="btn btn-primary w-100">Buy Now</a> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book Card 2 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">Atomic Habits</h5>
-                                <p class="card-text">by James Clear</p>
-                                <p class="text-primary fw-bold">₹499</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book Card 3 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <span class="badge">Bestseller</span>
-                            <img src="images/Richdad_SWAPNIL.webp" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">Rich Dad Poor Dad</h5>
-                                <p class="card-text">by Robert Kiyosaki</p>
-                                <p class="text-primary fw-bold">₹399</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book Card 4 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">Atomic Habits</h5>
-                                <p class="card-text">by James Clear</p>
-                                <p class="text-primary fw-bold">₹499</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
 
                 </div>
-            </div>
-
-            <!-- Books Start -->
-            <div class="container my-5">
-                <div class="row g-4">
-
-                    <!-- Book Card 1 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/Mera_Sangharsh SP.webp" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">The Great Gatsby</h5>
-                                <p class="card-text">by F. Scott Fitzgerald</p>
-                                <p class="text-primary fw-bold">₹299</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book Card 2 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">Atomic Habits</h5>
-                                <p class="card-text">by James Clear</p>
-                                <p class="text-primary fw-bold">₹499</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book Card 3 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <span class="badge">Bestseller</span>
-                            <img src="images/Richdad_SWAPNIL.webp" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">Rich Dad Poor Dad</h5>
-                                <p class="card-text">by Robert Kiyosaki</p>
-                                <p class="text-primary fw-bold">₹399</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book Card 4 -->
-                    <div class="col-md-3">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/Etomic_Habit SP.jpg" class="card-img-top" alt="Book">
-                            <div class="card-body">
-                                <h5 class="card-title">Atomic Habits</h5>
-                                <p class="card-text">by James Clear</p>
-                                <p class="text-primary fw-bold">₹499</p>
-                                <button class="btn btn-success" onclick="addToCart('Atomic Habits', 499)">
-                                    Add to Cart
-                                </button>
-
-                                <button class="btn btn-primary" onclick="buyNow('Atomic Habits', 499)">
-                                    Buy Now
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+              </div>
 
 
+              <!-- Bottom -->
+              <div class="footer-bottom">
+                <p>© <span id="year"></span> ReadersHub | All Rights Reserved</p>
+              </div>
+            </footer>
+          </body>
 
+          <!-- Footer End -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 
-                    </section>
-                    <body>
-
-
-
-                    <!-- Footer Start -->
-
-                    <footer class="footer mt-5">
-                        <div class="container">
-                            <div class="row">
-
-                                <!-- About -->
-                                <div class="col-md-3">
-                                    <h5>📖 ReadersHub</h5>
-                                    <p>Your one-stop destination for novels, academic books, and bestsellers. Discover
-                                        your next
-                                        great read.</p>
-                                </div>
-
-                                <!-- Categories -->
-                                <div class="col-md-3">
-                                    <h5>Categories</h5>
-                                    <a href="#">Fiction</a>
-                                    <a href="#">Non-Fiction</a>
-                                    <a href="#">Children</a>
-                                    <a href="#">Education</a>
-                                </div>
-
-                                <!-- Quick Links -->
-                                <div class="col-md-3">
-                                    <h5>Quick Links</h5>
-                                    <a href="#">Home</a>
-                                    <a href="#">About Us</a>
-                                    <a href="#">Terms & Conditions</a>
-                                    <a href="#">Return & Replacement</a>
-                                    <a href="#">Contact Us</a>
-                                </div>
-
-                                <!-- Newsletter -->
-                                <div class="col-md-3">
-                                    <h5>Follow Us</h5>
-                                    <div class="row">
-
-                                        <!-- Social Icons -->
-                                        <div class="col-md-1 social-icons mt-1">
-                                            <a href="#"><i class="bi bi-facebook"></i></a>
-                                        </div>
-                                        <div class=" col-md-1social-icons mt-1">
-                                            <a href="#"><i class="bi bi-instagram"></i></a>
-                                        </div>
-                                        <div class="col-md-1 social-icons mt-1">
-                                            <a href="#"><i class="bi bi-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-
-                        <!-- Bottom -->
-                        <div class="footer-bottom">
-                            <p>© <span id="year"></span> ReadersHub | All Rights Reserved</p>
-                        </div>
-                    </footer>
-                    </body>
-
-                    <!-- Footer End -->
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                        crossorigin="anonymous"></script>
-
-                    <script src="js/script_SP.js"></script>
+          <script src="js/script_SP.js"></script>
 </body>
 
 </html>

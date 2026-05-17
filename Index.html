@@ -17,74 +17,121 @@
     <link rel="stylesheet" href="css/rutuja.css" />
 
     <style>
-        /* SECTION HEADER NAME START */
+        body {
+            background: #f4f7fb;
+            overflow-x: hidden;
+        }
 
-        /* CENTER THE BOX */
+        /* Section */
+        .service-section {
+            height: 220px;
+        }
 
-        .heading-wrapper {
+        /* Animated Title */
+        .animated-title {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 50px 0;
-        }
-
-        /* ANIMATED BOX */
-
-        .animated-box {
-            padding: 20px 50px;
-            border-radius: 15px;
-            background: linear-gradient(90deg, #2563eb, #7c3aed);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
-            animation: floating 2s infinite alternate;
-            transition: 0.4s;
-        }
-
-        /* HOVER EFFECT */
-
-        .animated-box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-        }
-
-        /* HEADING */
-
-        .animated-box h2 {
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
+            gap: 6px;
+            font-size: 65px;
+            font-weight: 900;
             letter-spacing: 2px;
-            text-align: center;
         }
 
-        /* ANIMATION */
+        /* Each Letter */
+        .animated-title span {
+            display: inline-block;
 
-        @keyframes floating {
+            background: linear-gradient(135deg, #171716, #b80303, #1b1b1c);
 
-            from {
-                transform: translateY(0px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: bounce 2.7s infinite;
+            text-shadow: 0 0 15px rgba(228, 13, 13, 0.5);
+        }
+
+        /* Delay Animation */
+        .animated-title span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .animated-title span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .animated-title span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .animated-title span:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .animated-title span:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .animated-title span:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
+        .animated-title span:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+
+        .animated-title span:nth-child(8) {
+            animation-delay: 0.7s;
+        }
+
+        .animated-title span:nth-child(9) {
+            animation-delay: 0.8s;
+        }
+
+        .animated-title span:nth-child(10) {
+            animation-delay: 0.9s;
+        }
+
+        .animated-title span:nth-child(11) {
+            animation-delay: 1s;
+        }
+
+        .animated-title span:nth-child(12) {
+            animation-delay: 1.1s;
+        }
+
+        /* Bounce Animation */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
             }
 
-            to {
-                transform: translateY(-10px);
+            20% {
+                transform: translateY(-25px) scale(1.1);
+            }
+
+            40% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(0);
             }
         }
 
-        /* RESPONSIVE */
 
+        /* Mobile Responsive */
         @media(max-width:768px) {
 
-            .animated-box {
-                padding: 15px 25px;
+            .animated-title {
+                font-size: 45px;
+                gap: 5px;
+                letter-spacing: 3px;
             }
 
-            .animated-box h2 {
-                font-size: 28px;
-            }
+
+
         }
-
-        /* SECTION HEADER NAME END */
     </style>
+
 
 
 </head>
@@ -148,7 +195,7 @@
                                 </li>
 
                                 <li>
-                                    <a class="dropdown-item" href="competitive_exams.html">
+                                    <a class="dropdown-item" href="competitive_exam.html">
                                         Competitive Exams
                                     </a>
                                 </li>
@@ -222,22 +269,25 @@
     <section>
         <div class="container text-center my-5">
 
-            <h2 class="text-white mb-4"> Book Categories</h2>
-
             <div class="d-flex justify-content-center gap-3 flex-wrap">
-
-                <a href="#gov" class="category-circle gov">Competitive Exams</a>
-
-                <a href="motivational.html" class="category-circle mot">Motivational</a>
-
-                <a href="mythology.html" class="category-circle spi">Mythology</a>
 
                 <a href="fiction_books.html" class="category-circle fic">Fiction</a>
 
+                <a href="mythology.html" class="category-circle spi">Mythology</a>
+
+                <a href="motivational.html" class="category-circle mot">Motivational</a>
+
                 <a href="non_fiction.html" class="category-circle non">Non-Fiction</a>
 
+                <a href="competitive_exam.html" class="category-circle gov">Competitive Exams</a>
 
-            </div>
+
+
+
+
+
+
+</div>
 
         </div>
 
@@ -251,11 +301,26 @@
 
         <!-- SECTION HEADING -->
 
-        <div class="heading-wrapper">
 
-            <div class="animated-box">
-                <h2>📚 Motivational Books</h2>
-            </div>
+        <section class="service-section d-flex justify-content-center align-items-center ">
+
+            <h1 class="animated-title ">
+                <span>M</span>
+                <span>O</span>
+                <span>T</span>
+                <span>I</span>
+                <span>V</span>
+                <span>A</span>
+                <span>T</span>
+                <span>I</span>
+                <span>O</span>
+                <span>N</span>
+                <span>A</span>
+                <span>L</span>
+            </h1>
+
+        </section>
+
 
         </div>
 
@@ -547,1009 +612,1081 @@
 
                         <!-- SECTION HEADING -->
 
-                        <div class="heading-wrapper">
 
-                            <div class="animated-box">
-                                <h2>📚 Mythology Books</h2>
+                        <section class="service-section d-flex justify-content-center align-items-center ">
+
+                            <h1 class="animated-title ">
+                                <span>M</span>
+                                <span>Y</span>
+                                <span>T</span>
+                                <span>H</span>
+                                <span>O</span>
+                                <span>L</span>
+                                <span>O</span>
+                                <span>G</span>
+                                <span>Y</span>
+
+                            </h1>
+
+                        </section>
+                    </div>
+
+                    <!-- Book 1st -->
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_Mythology_img1.png" class="card-img-top img-fluid"
+                                        alt="Indian Mythology" />
+
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">Indian Mythology</h6>
+
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+
+                                            <span class="text-muted small">(3.0)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹340</del>
+
+                                            <span class="fw-bold text-danger ms-2"> ₹200 </span>
+                                            <span class="best-seller">Best Seller</span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
 
-                        </div>
+                            <!-- BOOK 2nd -->
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_Mythology_img2.png" class="card-img-top img-fluid"
+                                        alt="War of Lanka" />
 
-                        <!-- Book 1st -->
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">War of Lanka</h6>
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_Mythology_img1.png" class="card-img-top img-fluid"
-                                            alt="Indian Mythology" />
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">Indian Mythology</h6>
+                                            <span class="text-muted small">(2.0)</span>
+                                        </div>
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <i class="bi bi-star"></i>
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹400</del>
 
-                                                <span class="text-muted small">(3.0)</span>
+                                            <span class="fw-bold text-danger ms-2"> ₹200 </span>
+                                            <span class="best-seller">Best Seller</span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3rd BOOk -->
+
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_Mythology_img3.png" class="card-img-top img-fluid"
+                                        alt="Swami Vivekanada" />
+
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">Swami Vivekanada</h6>
+
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+
+                                            <span class="text-muted small">(3.0)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹100</del>
+
+                                            <span class="fw-bold text-danger ms-2"> ₹300 </span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4th BOOK -->
+
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_Mythology_img4.png" class="card-img-top img-fluid"
+                                        alt="Lessons from Mahabharta" />
+
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">Lessons Mahabharta</h6>
+
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+
+                                            <span class="text-muted small">(4.0)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹450</del>
+
+                                            <span class="fw-bold text-danger ms-2"> ₹400 </span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BOOK 9th -->
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_mythology_img9.png" class="card-img-top img-fluid"
+                                        alt="Dopamine Detox" />
+
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">Dopamine Detox</h6>
+
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+
+                                            <span class="text-muted small">(3.0)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹499</del>
+
+                                            <span class="fw-bold text-danger ms-2"> ₹300 </span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BOOK 10th -->
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_Mythology_img10.png" class="card-img-top img-fluid"
+                                        alt="Shirdi Sai Baba" />
+
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">Shirdi Sai Baba</h6>
+
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                            <i class="bi bi-star"></i>
+
+                                            <span class="text-muted small">(3.0)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹499</del>
+
+                                            <span class="fw-bold text-danger ms-2"> ₹300 </span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BOOK 11th -->
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_mythology_img11.png" class="card-img-top img-fluid"
+                                        alt="Circle" />
+
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">Circle</h6>
+
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+
+                                            <span class="text-muted small">(4.0)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹499</del>
+
+                                            <span class="fw-bold text-danger ms-2"> ₹300 </span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- BOOK 12th -->
+                            <div class="col-md-3">
+                                <div class="card mt-5 book-card">
+                                    <!-- Book Image -->
+                                    <img src="images/R_mythology_img12.png" class="card-img-top img-fluid"
+                                        alt="Devdutt Pattanaik" />
+
+                                    <!-- Card Body -->
+                                    <div class="card-body d-flex flex-column">
+                                        <!-- Book Title -->
+                                        <h6 class="card-title">Devdutt Pattanaik</h6>
+
+                                        <!-- Rating -->
+                                        <div class="text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+
+                                            <span class="text-muted small">(4.0)</span>
+                                        </div>
+
+                                        <!-- Price -->
+                                        <p class="mb-3">
+                                            <del class="text-muted">₹499</del>
+
+                                            <span class="fw-bold text-danger ms-2"> ₹300 </span>
+                                        </p>
+
+                                        <!-- Button -->
+                                        <a href="#"
+                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                            <i class="bi bi-cart-plus"></i>
+                                            Add to Cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SECTION HEADING END -->
+                            <hr>
+
+                            <!-- SECTION HEADING -->
+
+
+                            <section class="service-section d-flex justify-content-center align-items-center ">
+
+                                <h1 class="animated-title ">
+                                    <span>F</span>
+                                    <span>I</span>
+                                    <span>C</span>
+                                    <span>T</span>
+                                    <span>I</span>
+                                    <span>O</span>
+                                    <span>N</span>
+
+                                </h1>
+
+                            </section>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_1.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
+
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
+                                                <h6 class="card-title">Mrityunjayi</h6>
+
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                    <span class="text-muted small">(5.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹299</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹189 </span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹340</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹200 </span>
-                                                <span class="best-seller">Best Seller</span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- BOOK 2nd -->
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_Mythology_img2.png" class="card-img-top img-fluid"
-                                            alt="War of Lanka" />
+                                    <!-- BOOK 2nd -->
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_2.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">War of Lanka</h6>
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
+                                                <h6 class="card-title">Swami Vivekananda</h6>
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <i class="bi bi-star"></i>
-                                                <i class="bi bi-star"></i>
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
 
-                                                <span class="text-muted small">(2.0)</span>
+                                                    <span class="text-muted small">(5.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹299</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹179 </span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹400</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹200 </span>
-                                                <span class="best-seller">Best Seller</span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- 3rd BOOk -->
+                                    <!-- 3rd BOOk -->
 
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_Mythology_img3.png" class="card-img-top img-fluid"
-                                            alt="Swami Vivekanada" />
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_3.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">Swami Vivekanada</h6>
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
+                                                <h6 class="card-title">Shriman Yogi</h6>
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <i class="bi bi-star"></i>
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
 
-                                                <span class="text-muted small">(3.0)</span>
+                                                    <span class="text-muted small">(5.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹299</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹199 </span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹100</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹300 </span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- 4th BOOK -->
+                                    <!-- 4th BOOK -->
 
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_Mythology_img4.png" class="card-img-top img-fluid"
-                                            alt="Lessons from Mahabharta" />
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_4.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">Lessons Mahabharta</h6>
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
+                                                <h6 class="card-title">Duniyadari</h6>
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
 
-                                                <span class="text-muted small">(4.0)</span>
+                                                    <span class="text-muted small">(4.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹159</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹99 </span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹450</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹400 </span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- BOOK 9th -->
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_mythology_img9.png" class="card-img-top img-fluid"
-                                            alt="Dopamine Detox" />
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">Dopamine Detox</h6>
+                                    <!-- 5th BOOK -->
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_5.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <i class="bi bi-star"></i>
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
+                                                <h6 class="card-title">Abb Goshtich Goshti</h6>
 
-                                                <span class="text-muted small">(3.0)</span>
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+
+                                                    <span class="text-muted small">(4.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹149</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹89 </span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹499</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹300 </span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- BOOK 10th -->
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_Mythology_img10.png" class="card-img-top img-fluid"
-                                            alt="Shirdi Sai Baba" />
+                                    <!-- 6th BOOK -->
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">Shirdi Sai Baba</h6>
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_6.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
-                                                <i class="bi bi-star"></i>
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
+                                                <h6 class="card-title">Pustakachya Palikade</h6>
 
-                                                <span class="text-muted small">(3.0)</span>
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                    <span class="text-muted small">(5.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹189</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹120 </span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹499</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹300 </span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- BOOK 11th -->
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_mythology_img11.png" class="card-img-top img-fluid"
-                                            alt="Circle" />
+                                    <!-- BOOK 7th -->
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_7.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">Circle</h6>
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
+                                                <h6 class="card-title">Godan</h6>
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
 
-                                                <span class="text-muted small">(4.0)</span>
+                                                    <span class="text-muted small">(5.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹200</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹150 </span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹499</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹300 </span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- BOOK 12th -->
-                                <div class="col-md-3">
-                                    <div class="card mt-5 book-card">
-                                        <!-- Book Image -->
-                                        <img src="images/R_mythology_img12.png" class="card-img-top img-fluid"
-                                            alt="Devdutt Pattanaik" />
+                                    <!-- BOOK 8th -->
+                                    <div class="col-md-3">
+                                        <div class="card mt-5 book-card">
+                                            <!-- Book Image -->
+                                            <img src="images/f_8.jfif" class="card-img-top img-fluid"
+                                                alt="fiction book" />
 
-                                        <!-- Card Body -->
-                                        <div class="card-body d-flex flex-column">
-                                            <!-- Book Title -->
-                                            <h6 class="card-title">Devdutt Pattanaik</h6>
+                                            <!-- Card Body -->
+                                            <div class="card-body d-flex flex-column">
+                                                <!-- Book Title -->
 
-                                            <!-- Rating -->
-                                            <div class="text-warning mb-2">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star"></i>
+                                                <h6 class="card-title">Nirmala</h6>
 
-                                                <span class="text-muted small">(4.0)</span>
+                                                <!-- Rating -->
+                                                <div class="text-warning mb-2">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                    <i class="bi bi-star"></i>
+
+                                                    <span class="text-muted small">(3.0)</span>
+                                                </div>
+
+                                                <!-- Price -->
+                                                <p class="mb-3">
+                                                    <del class="text-muted">₹125</del>
+
+                                                    <span class="fw-bold text-danger ms-2"> ₹98</span>
+                                                </p>
+
+                                                <!-- Button -->
+                                                <a href="#"
+                                                    class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                    <i class="bi bi-cart-plus"></i>
+                                                    Add to Cart
+                                                </a>
                                             </div>
-
-                                            <!-- Price -->
-                                            <p class="mb-3">
-                                                <del class="text-muted">₹499</del>
-
-                                                <span class="fw-bold text-danger ms-2"> ₹300 </span>
-                                            </p>
-
-                                            <!-- Button -->
-                                            <a href="#"
-                                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                                <i class="bi bi-cart-plus"></i>
-                                                Add to Cart
-                                            </a>
                                         </div>
                                     </div>
-                                </div>
-
-                                <!-- SECTION HEADING END -->
-                                <hr>
-
-                                <!-- SECTION HEADING -->
-
-                                <div class="heading-wrapper">
-
-                                    <div class="animated-box">
-                                        <h2>📚 Fictional Books</h2>
-                                    </div>
-
-                                </div>
-
-                                 <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_1.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Mrityunjayi</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹299</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹189 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BOOK 2nd -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_2.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Swami Vivekananda</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹299</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹179 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3rd BOOk -->
-
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_3.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Shriman Yogi</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹299</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹199 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 4th BOOK -->
-
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_4.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Duniyadari</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-
-                                <span class="text-muted small">(4.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹159</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹99 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- 5th BOOK -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_5.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Abb Goshtich Goshti</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-
-                                <span class="text-muted small">(4.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹149</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹89 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6th BOOK -->
-
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_6.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Pustakachya Palikade</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹189</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹120 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BOOK 7th -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_7.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Godan</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹200</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹150 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BOOK 8th -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/f_8.jfif" class="card-img-top img-fluid" alt="fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-
-                            <h6 class="card-title">Nirmala</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                <i class="bi bi-star"></i>
-
-                                <span class="text-muted small">(3.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹125</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹98</span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                                <!-- SECTION HEADING END -->
-                                 <hr>
-
-                                 <!-- SECTION HEADING -->
-
-                        <div class="heading-wrapper">
-
-                            <div class="animated-box">
-                                <h2>📚 Non Fictional Books</h2>
-                            </div>
-
-                        </div>
-
-                         <!-- Book 1st -->
-       
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_1.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Shyamchi Aai</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹89</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹45 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BOOK 2nd -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_2.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Majhi Janmathep</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹96</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹85 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3rd BOOk -->
-
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_3.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Raja Shivchatrapati</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹120</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹98 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 4th BOOK -->
-
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_4.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Panipatchi Bakhar</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-
-                                <span class="text-muted small">(4.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹159</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹99 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- 5th BOOK -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_5.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Sambhaji Maharaj</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹136</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹119 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 6th BOOK -->
-
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_6.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Maharani Yesubai</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹136</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹114 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BOOK 7th -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_7.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-                            <h6 class="card-title">Maratha Kulancha Itihas</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹200</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹150 </span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- BOOK 8th -->
-                <div class="col-md-3">
-                    <div class="card mt-5 book-card">
-                        <!-- Book Image -->
-                        <img src="images/nf_8.jfif" class="card-img-top img-fluid" alt="non fiction book" />
-
-                        <!-- Card Body -->
-                        <div class="card-body d-flex flex-column">
-                            <!-- Book Title -->
-
-                            <h6 class="card-title">1857</h6>
-
-                            <!-- Rating -->
-                            <div class="text-warning mb-2">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-
-                                <span class="text-muted small">(5.0)</span>
-                            </div>
-
-                            <!-- Price -->
-                            <p class="mb-3">
-                                <del class="text-muted">₹120</del>
-
-                                <span class="fw-bold text-danger ms-2"> ₹92</span>
-                            </p>
-
-                            <!-- Button -->
-                            <a href="#"
-                                class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
-                                <i class="bi bi-cart-plus"></i>
-                                Add to Cart
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                         <!-- SECTION HEADING END -->
+
+
+
+
+                                    <!-- SECTION HEADING END -->
+                                    <hr>
+
+
+                                    <!-- SECTION HEADING -->
+
+
+                                    <section class="service-section d-flex justify-content-center align-items-center ">
+
+                                        <h1 class="animated-title ">
+                                            <span>N</span>
+                                            <span>O</span>
+                                            <span>N</span>
+                                            <span>-</span>
+                                            <span>F</span>
+                                            <span>I</span>
+                                            <span>C</span>
+                                            <span>T</span>
+                                            <span>I</span>
+                                            <span>O</span>
+                                            <span>N</span>
+
+                                        </h1>
+
+                                    </section>
+
+                                    <!-- Book 1st -->
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_1.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+                                                        <h6 class="card-title">Shyamchi Aai</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+
+                                                            <span class="text-muted small">(5.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹89</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹45 </span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- BOOK 2nd -->
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_2.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+                                                        <h6 class="card-title">Majhi Janmathep</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+
+                                                            <span class="text-muted small">(5.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹96</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹85 </span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 3rd BOOk -->
+
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_3.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+                                                        <h6 class="card-title">Raja Shivchatrapati</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+
+                                                            <span class="text-muted small">(5.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹120</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹98 </span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- 4th BOOK -->
+
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_4.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+                                                        <h6 class="card-title">Panipatchi Bakhar</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star"></i>
+
+                                                            <span class="text-muted small">(4.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹159</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹99 </span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 5th BOOK -->
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_5.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+                                                        <h6 class="card-title">Sambhaji Maharaj</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+
+                                                            <span class="text-muted small">(5.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹136</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹119 </span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- 6th BOOK -->
+
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_6.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+                                                        <h6 class="card-title">Maharani Yesubai</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+
+                                                            <span class="text-muted small">(5.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹136</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹114 </span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- BOOK 7th -->
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_7.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+                                                        <h6 class="card-title">Maratha Kulancha Itihas</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+
+                                                            <span class="text-muted small">(5.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹200</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹150 </span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- BOOK 8th -->
+                                            <div class="col-md-3">
+                                                <div class="card mt-5 book-card">
+                                                    <!-- Book Image -->
+                                                    <img src="images/nf_8.jfif" class="card-img-top img-fluid"
+                                                        alt="non fiction book" />
+
+                                                    <!-- Card Body -->
+                                                    <div class="card-body d-flex flex-column">
+                                                        <!-- Book Title -->
+
+                                                        <h6 class="card-title">1857</h6>
+
+                                                        <!-- Rating -->
+                                                        <div class="text-warning mb-2">
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+
+                                                            <span class="text-muted small">(5.0)</span>
+                                                        </div>
+
+                                                        <!-- Price -->
+                                                        <p class="mb-3">
+                                                            <del class="text-muted">₹120</del>
+
+                                                            <span class="fw-bold text-danger ms-2"> ₹92</span>
+                                                        </p>
+
+                                                        <!-- Button -->
+                                                        <a href="#"
+                                                            class="btn btn-primary w-100 d-flex align-items-center justify-content-center gap-2 cart-btn">
+                                                            <i class="bi bi-cart-plus"></i>
+                                                            Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                            <!-- SECTION HEADING END -->
+
+
+                                            <!-- SECTION HEADING -->
+
+
+                                            <section
+                                                class="service-section d-flex justify-content-center align-items-center ">
+
+                                                <h1 class="animated-title ">
+                                                    <span>C</span>
+                                                    <span>O</span>
+                                                    <span>M</span>
+                                                    <span>P</span>
+                                                    <span>E</span>
+                                                    <span>T</span>
+                                                    <span>I</span>
+                                                    <span>T</span>
+                                                    <span>I</span>
+                                                    <span>V</span>
+                                                    <span>E</span>
+
+                                                </h1>
+
+                                            </section>
 
 
 
@@ -1578,10 +1715,11 @@
                     <!-- Categories -->
                     <div class="col-md-3">
                         <h5>Categories</h5>
-                        <a href="#">Fiction</a>
-                        <a href="#">Non-Fiction</a>
-                        <a href="#">Children</a>
-                        <a href="#">Education</a>
+                        <a href="fiction_books.html">Fiction</a>
+                        <a href="non_fiction.html">Non-Fiction</a>
+                        <a href="motivational.html">Motivational</a>
+                        <a href="mythology.html">Mythology</a>
+                        <a href="competitive_exam.html">Competitive-Exams</a>
                     </div>
 
                     <!-- Quick Links -->
