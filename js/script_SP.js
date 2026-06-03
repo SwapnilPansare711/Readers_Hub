@@ -9,3 +9,13 @@ function addToCart(name, price) {
 function addToCart(){
     alert("Item Added to Cart!")
 }
+
+
+function addToCart() {
+    alert("Book added to cart successfully!");
+}
+
+
+
+
+
