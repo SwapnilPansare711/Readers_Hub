@@ -15,138 +15,142 @@
     <!-- CSS -->
     <link href="css/Swapnil.css" rel="stylesheet" type="text/css" />
     <link href="css/kranti.css" rel="stylesheet" type="text/css" />
-     <link rel="stylesheet" href="css/rutuja.css" />
-     <style>
+    <link rel="stylesheet" href="css/rutuja.css" />
+    <style>
         /* Page Background */
-body {
-    background: linear-gradient(to right, #fdfbfb, #ebedee);
-    font-family: 'Poppins', sans-serif;
-}
+        body {
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            font-family: 'Poppins', sans-serif;
+        }
 
-/* Main Heading Animation */
-h1 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: #7b1e3a;
-    margin-bottom: 30px;
-    position: relative;
-    animation: fadeDown 1.5s ease;
-}
+        /* Main Heading Animation */
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: #7b1e3a;
+            margin-bottom: 30px;
+            position: relative;
+            animation: fadeDown 1.5s ease;
+        }
 
-/* Underline Animation */
-h1::after {
-    content: "";
-    width: 120px;
-    height: 4px;
-    background: #7b1e3a;
-    position: absolute;
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%);
-    animation: lineMove 2s infinite alternate;
-    border-radius: 10px;
-}
+        /* Underline Animation */
+        h1::after {
+            content: "";
+            width: 120px;
+            height: 4px;
+            background: #7b1e3a;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            animation: lineMove 2s infinite alternate;
+            border-radius: 10px;
+        }
 
-/* Section Box */
-.return-section {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
-    transition: 0.4s ease;
-    animation: fadeUp 1.5s ease;
-}
+        /* Section Box */
+        .return-section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+            transition: 0.4s ease;
+            animation: fadeUp 1.5s ease;
+        }
 
-/* Hover Effect */
-.return-section:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 12px 30px rgba(0,0,0,0.15);
-}
+        /* Hover Effect */
+        .return-section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+        }
 
-/* Sub Headings */
-.return-section h2 {
-    color: #7b1e3a;
-    font-weight: 600;
-    margin-bottom: 15px;
-    position: relative;
-}
+        /* Sub Headings */
+        .return-section h2 {
+            color: #7b1e3a;
+            font-weight: 600;
+            margin-bottom: 15px;
+            position: relative;
+        }
 
-/* List Styling */
-.return-section ul li {
-    margin-bottom: 10px;
-    font-size: 17px;
-    transition: 0.3s;
-}
+        /* List Styling */
+        .return-section ul li {
+            margin-bottom: 10px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
 
-/* Hover on Points */
-.return-section ul li:hover {
-    color: #7b1e3a;
-    transform: translateX(8px);
-}
+        /* Hover on Points */
+        .return-section ul li:hover {
+            color: #7b1e3a;
+            transform: translateX(8px);
+        }
 
-/* Image Styling */
-.return-img {
-    width: 100%;
-    border-radius: 20px;
-    transition: 0.5s ease;
-    animation: zoomIn 2s ease;
-}
+        /* Image Styling */
+        .return-img {
+            width: 100%;
+            border-radius: 20px;
+            transition: 0.5s ease;
+            animation: zoomIn 2s ease;
+        }
 
-/* Image Hover */
-.return-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
-}
+        /* Image Hover */
+        .return-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+        }
 
-/* Animations */
-@keyframes fadeDown {
-    from {
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        /* Animations */
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-@keyframes zoomIn {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
 
-@keyframes lineMove {
-    from {
-        width: 80px;
-    }
-    to {
-        width: 140px;
-    }
-}
-     </style>
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes lineMove {
+            from {
+                width: 80px;
+            }
+
+            to {
+                width: 140px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- Navbar Start -->
+    <!-- Navbar Start -->
 
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg custom-navbar">
@@ -247,7 +251,9 @@ h1::after {
                     <!-- Icons -->
 
                     <div class="d-flex align-items-center ms-3 icon-box">
-                        <i class="bi bi-person-circle me-3"></i>
+                        <a href="login.html">
+                            <i class="bi bi-person-circle me-3"></i>
+                        </a>
 
                         <i class="bi bi-cart"></i>
                     </div>
@@ -261,43 +267,44 @@ h1::after {
     <!-- Navbar End -->
 
     <!-- Return Start -->
-     <main>
+    <main>
         <section class="mt-4 mb-4 p-2">
             <div class="container return-section mt-5">
                 <div class="row mb-4">
                     <h1 class="text-center mb-4">Return & Replacement</h1>
 
                     <!-- <p>At Readers Hub, we strive to provide high-quality books and a smooth shopping experience. If you are not satisfied with your purchase, we’re here to help.</p> -->
-                     <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <h4>Return</h4>
-                        <ul>
-                            <li>You can request a return within 7 days of receiving your order.</li>
-                            <li>The book must be unused, in original condition, and with all packaging intact.</li>
-                            <li>Returns will not be accepted for:
-                                <ul>
-                                    <li>Used or damaged books (not caused during delivery)</li>
-                                    <li>Digital products or e-books</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h4>Return</h4>
+                            <ul>
+                                <li>You can request a return within 7 days of receiving your order.</li>
+                                <li>The book must be unused, in original condition, and with all packaging intact.</li>
+                                <li>Returns will not be accepted for:
+                                    <ul>
+                                        <li>Used or damaged books (not caused during delivery)</li>
+                                        <li>Digital products or e-books</li>
+                                    </ul>
+                                </li>
+                            </ul>
 
-                        <h4>Replacement</h4>
-                        <ul>
-                            <li>Replacement is available if:
-                                <ul>
-                                    <li>You received a damaged book</li>
-                                    <li>You received the wrong item</li>
-                                </ul>
-                            </li>
-                            <li>To request a replacement, contact us within 48 hours of delivery with photos of the product.</li>
-                        </ul>
+                            <h4>Replacement</h4>
+                            <ul>
+                                <li>Replacement is available if:
+                                    <ul>
+                                        <li>You received a damaged book</li>
+                                        <li>You received the wrong item</li>
+                                    </ul>
+                                </li>
+                                <li>To request a replacement, contact us within 48 hours of delivery with photos of the
+                                    product.</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 about">
+                            <img class="img-fluid" src="images/return_replace.png" />
+                        </div>
                     </div>
-                    
-                    <div class="col-md-6 about">
-                        <img class="img-fluid" src="images/return_replace.png" />
-                    </div>
-                     </div>
                 </div>
 
                 <div class="row mt-4 mb-4">
@@ -308,12 +315,14 @@ h1::after {
                         <h4>Refunds</h4>
                         <ul>
                             <li>Once we receive and inspect the returned item, we will notify you.</li>
-                            <li>If approved, your refund will be processed within 5–7 business days to your original payment method.</li>
+                            <li>If approved, your refund will be processed within 5–7 business days to your original
+                                payment method.</li>
                         </ul>
 
                         <h4>Return Shipping</h4>
                         <ul>
-                            <li>If the return is due to our mistake (wrong or damaged item), we will cover the shipping cost.</li>
+                            <li>If the return is due to our mistake (wrong or damaged item), we will cover the shipping
+                                cost.</li>
                             <li>Otherwise, return shipping charges may apply.</li>
                         </ul>
                         <h4>How to Request</h4>
@@ -332,7 +341,7 @@ h1::after {
                 </div>
             </div>
         </section>
-     </main>
+    </main>
 
     <!-- Return End -->
 
@@ -345,7 +354,8 @@ h1::after {
                 <!-- About -->
                 <div class="col-md-3">
                     <h5>📖 Reader Hub</h5>
-                    <p>Your one-stop destination for novels, academic books, and bestsellers. Discover your next
+                    <p>Your one-stop destination for novels, academic
+                        books, and bestsellers. Discover your next
                         great read.</p>
                 </div>
 
@@ -356,17 +366,19 @@ h1::after {
                     <a href="non_fiction.html">Non-Fiction</a>
                     <a href="motivational.html">Motivational</a>
                     <a href="mythology.html">Mythology</a>
-                    <a href="#">competitive-Exams</a>
+                    <a href="competitive_exam.html">Competitive-Exams</a>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="col-md-3">
                     <h5>Quick Links</h5>
-                    <a href="Index.html">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
-                    <a href="terms_condition.html">Terms & Conditions</a>
-                    <a href="return_replacement.html">Return & Replacement</a>
-                    <a href="Contact.html">Contact Us</a>
+                    <a href="terms_condition.html">Terms &
+                        Conditions</a>
+                    <a href="return_replacement.html">Return &
+                        Replacement</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
 
                 <!-- Newsletter -->
@@ -376,13 +388,13 @@ h1::after {
 
                         <!-- Social Icons -->
                         <div class="col-md-1 social-icons mt-1">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                         </div>
                         <div class=" col-md-1social-icons mt-1">
-                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
                         </div>
                         <div class="col-md-1 social-icons mt-1">
-                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="https://x.com/"><i class="bi bi-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -392,7 +404,8 @@ h1::after {
 
         <!-- Bottom -->
         <div class="footer-bottom">
-            <p>© <span id="year"></span> ReadersHub | All Rights Reserved</p>
+            <p>© <span id="year"></span> ReadersHub | All Rights
+                Reserved</p>
         </div>
     </footer>
 
