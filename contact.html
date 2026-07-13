@@ -1,439 +1,422 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
 
-    <!-- Icon Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
-    <!-- CSS -->
-    <link href="css/Swapnil.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/rutuja.css" />
+  <!-- Icon Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
-    <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link href="css/Swapnil.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/rutuja.css" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
 
   <style>
-  
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-/* Background Section */
+    /* Background Section */
 
-.contact-section{
+    .contact-section {
 
-    min-height: 100vh;
+      min-height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    padding: 40px 15px;
+      padding: 40px 15px;
 
-    /* Background Image */
+      /* Background Image */
 
-    background-image:
-    linear-gradient(rgba(0,0,0,0.25),
-    rgba(0,0,0,0.25)),
-    url("images/contact_img1.png");
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)),
+        url("images/contact_img1.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 
-    overflow: hidden;
-    position: relative;
-}
-/* Form Box */
+      overflow: hidden;
+      position: relative;
+    }
 
-.contact-form{
-    width: 100%;
-    max-width: 850px;
+    /* Form Box */
 
-    background: rgba(255,255,255,0.12);
+    .contact-form {
+      width: 100%;
+      max-width: 850px;
 
-    backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.12);
 
-    border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(12px);
 
-    border-radius: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
 
-    padding: 40px;
+      border-radius: 25px;
 
-    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+      padding: 40px;
 
-    animation: fadeUp 1s ease;
-}
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 
-/* Animation */
+      animation: fadeUp 1s ease;
+    }
 
-@keyframes fadeUp{
+    /* Animation */
 
-    from{
+    @keyframes fadeUp {
+
+      from {
         opacity: 0;
         transform: translateY(50px);
-    }
+      }
 
-    to{
+      to {
         opacity: 1;
         transform: translateY(0);
+      }
     }
-}
 
-/* Heading */
+    /* Heading */
 
-.contact-form h2{
-    text-align: center;
-    color: #fff;
+    .contact-form h2 {
+      text-align: center;
+      color: #fff;
 
-    font-size: 42px;
-    font-weight: 700;
+      font-size: 42px;
+      font-weight: 700;
 
-    margin-bottom: 10px;
-}
+      margin-bottom: 10px;
+    }
 
-.contact-form p{
-    text-align: center;
-    color: #f5f5f5;
+    .contact-form p {
+      text-align: center;
+      color: #f5f5f5;
 
-    margin-bottom: 35px;
-}
+      margin-bottom: 35px;
+    }
 
-/* Inputs */
+    /* Inputs */
 
-.form-control,
-.form-select{
+    .form-control,
+    .form-select {
 
-    height: 55px;
+      height: 55px;
 
-    border: none;
-    border-radius: 14px;
+      border: none;
+      border-radius: 14px;
 
-    background: rgba(255,255,255,0.85);
+      background: rgba(255, 255, 255, 0.85);
 
-    padding-left: 18px;
+      padding-left: 18px;
 
-    transition: 0.3s;
-}
+      transition: 0.3s;
+    }
 
-textarea.form-control{
-    height: 130px;
-    resize: none;
+    textarea.form-control {
+      height: 130px;
+      resize: none;
 
-    padding-top: 15px;
-}
+      padding-top: 15px;
+    }
 
-/* Focus Effect */
+    /* Focus Effect */
 
-.form-control:focus,
-.form-select:focus{
+    .form-control:focus,
+    .form-select:focus {
 
-    box-shadow: none;
+      box-shadow: none;
 
-    transform: translateY(-2px);
+      transform: translateY(-2px);
 
-    background: #fff;
-}
+      background: #fff;
+    }
 
-/* Button */
+    /* Button */
 
-.btn-contact{
+    .btn-contact {
 
-    background: linear-gradient(45deg,#c96d5d,#e8a191);
+      background: linear-gradient(45deg, #c96d5d, #e8a191);
 
-    color: #fff;
+      color: #fff;
 
-    border: none;
+      border: none;
 
-    padding: 14px 40px;
+      padding: 14px 40px;
 
-    border-radius: 50px;
+      border-radius: 50px;
 
-    font-size: 18px;
-    font-weight: 600;
+      font-size: 18px;
+      font-weight: 600;
 
-    transition: 0.4s;
-}
+      transition: 0.4s;
+    }
 
-.btn-contact:hover{
+    .btn-contact:hover {
 
-    transform: translateY(-4px);
+      transform: translateY(-4px);
 
-    background: linear-gradient(45deg,#b85c4c,#d98a7b);
+      background: linear-gradient(45deg, #b85c4c, #d98a7b);
 
-    color: white;
-}
+      color: white;
+    }
 
-/* Responsive */
+    /* Responsive */
 
-@media(max-width:768px){
+    @media(max-width:768px) {
 
-    .contact-form{
+      .contact-form {
         padding: 25px;
-    }
+      }
 
-    .contact-form h2{
+      .contact-form h2 {
         font-size: 32px;
+      }
     }
-}
 
-/* Animated Contact Title */
+    /* Animated Contact Title */
 
-.animated-title{
+    .animated-title {
 
-    text-align: center;
-    margin-bottom: 15px;
-}
+      text-align: center;
+      margin-bottom: 15px;
+    }
 
-.animated-title span{
+    .animated-title span {
 
-    display: inline-block;
+      display: inline-block;
 
-    font-size: 55px;
-    font-weight: 700;
+      font-size: 55px;
+      font-weight: 700;
 
-    color: #fff;
+      color: #fff;
 
-    animation: bounce 1.2s infinite;
+      animation: bounce 1.2s infinite;
 
-    transition: 0.3s;
-}
+      transition: 0.3s;
+    }
 
-/* Delay for each letter */
+    /* Delay for each letter */
 
-.animated-title span:nth-child(1){
-    animation-delay: 0s;
-}
+    .animated-title span:nth-child(1) {
+      animation-delay: 0s;
+    }
 
-.animated-title span:nth-child(2){
-    animation-delay: 0.1s;
-}
+    .animated-title span:nth-child(2) {
+      animation-delay: 0.1s;
+    }
 
-.animated-title span:nth-child(3){
-    animation-delay: 0.2s;
-}
+    .animated-title span:nth-child(3) {
+      animation-delay: 0.2s;
+    }
 
-.animated-title span:nth-child(4){
-    animation-delay: 0.3s;
-}
+    .animated-title span:nth-child(4) {
+      animation-delay: 0.3s;
+    }
 
-.animated-title span:nth-child(5){
-    animation-delay: 0.4s;
-}
+    .animated-title span:nth-child(5) {
+      animation-delay: 0.4s;
+    }
 
-.animated-title span:nth-child(6){
-    animation-delay: 0.5s;
-}
+    .animated-title span:nth-child(6) {
+      animation-delay: 0.5s;
+    }
 
-.animated-title span:nth-child(7){
-    animation-delay: 0.6s;
-}
+    .animated-title span:nth-child(7) {
+      animation-delay: 0.6s;
+    }
 
-.animated-title span:nth-child(9){
-    animation-delay: 0.7s;
-}
+    .animated-title span:nth-child(9) {
+      animation-delay: 0.7s;
+    }
 
-.animated-title span:nth-child(10){
-    animation-delay: 0.8s;
-}
+    .animated-title span:nth-child(10) {
+      animation-delay: 0.8s;
+    }
 
-/* Space */
+    /* Space */
 
-.space{
-    width: 20px;
-}
+    .space {
+      width: 20px;
+    }
 
-/* Animation */
+    /* Animation */
 
-@keyframes bounce{
+    @keyframes bounce {
 
-    0%,
-    100%{
+      0%,
+      100% {
         transform: translateY(0);
-    }
+      }
 
-    50%{
+      50% {
         transform: translateY(-12px);
+      }
     }
-}
 
-/* Responsive */
+    /* Responsive */
 
-@media(max-width:768px){
+    @media(max-width:768px) {
 
-    .animated-title span{
+      .animated-title span {
         font-size: 38px;
+      }
     }
-}
-</style>
-  </head>
+  </style>
+</head>
 
-  <body>
-    <!-- Navbar Start -->
+<body>
+  <!-- Navbar Start -->
 
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container-fluid">
-          <!-- Logo -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <!-- Logo -->
 
-          <a class="navbar-brand logo-text" href="index.html"> ReadersHub </a>
+        <a class="navbar-brand logo-text" href="index.html"> ReadersHub </a>
 
-          <!-- Toggle Button -->
+        <!-- Toggle Button -->
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Navbar Content -->
+        <!-- Navbar Content -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Menu -->
 
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"> Home </a>
-              </li>
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> About Us </a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About Us </a>
+            </li>
 
-              <!-- Dropdown -->
+            <!-- Dropdown -->
 
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Categories
-                </a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Categories
+              </a>
 
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="Motivational.html">
-                      Motivational & Self-help
-                    </a>
-                  </li>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="Motivational.html">
+                    Motivational & Self-help
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="mythology.html">
-                      Mythology
-                    </a>
-                  </li>
+                <li>
+                  <a class="dropdown-item" href="mythology.html">
+                    Mythology
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="fiction_books.html">
-                      Fiction Books
-                    </a>
-                  </li>
+                <li>
+                  <a class="dropdown-item" href="fiction_books.html">
+                    Fiction Books
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="competitive_exams.html">
-                      Competitive Exams
-                    </a>
-                  </li>
+                <li>
+                  <a class="dropdown-item" href="competitive_exams.html">
+                    Competitive Exams
+                  </a>
+                </li>
 
-                  <li>
-                    <a class="dropdown-item" href="non_fiction.html">
-                      Non Fiction
-                    </a>
-                  </li>
-                </ul>
-              </li>
+                <li>
+                  <a class="dropdown-item" href="non_fiction.html">
+                    Non Fiction
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html"> Contact Us </a>
-              </li>
-           <li class="nav-item">
-            <a class="nav-link" href="return_replacement.html">Return & Replacement</a>
-         </li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html"> Contact Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="return_replacement.html">Return & Replacement</a>
+            </li>
+          </ul>
 
-            <!-- Search Bar -->
+          <!-- Search Bar -->
 
-            <form class="search-box" role="search">
-              <div class="search-wrapper">
-                <!-- Search Icon -->
-                <i class="bi bi-search search-icon"></i>
+          <form class="search-box" role="search">
+            <div class="search-wrapper">
+              <!-- Search Icon -->
+              <i class="bi bi-search search-icon"></i>
 
-                <!-- Input -->
-                <input
-                  type="search"
-                  class="search-input"
-                  placeholder="Search books..."
-                />
+              <!-- Input -->
+              <input type="search" class="search-input" placeholder="Search books..." />
 
-                <!-- Mic Icon -->
-                <button class="mic-btn" type="button">
-                  <i class="bi bi-mic-fill"></i>
-                </button>
-              </div>
-            </form>
-            <!-- search end here -->
-            <!-- Icons -->
-
-           <!-- Icons -->
-
-            <div class="d-flex align-items-center ms-3 icon-box">
-              <i class="bi bi-person-circle me-3"></i>
-
-              <i class="bi bi-cart"></i>
+              <!-- Mic Icon -->
+              <button class="mic-btn" type="button">
+                <i class="bi bi-mic-fill"></i>
+              </button>
             </div>
+          </form>
+          <!-- search end here -->
+          <!-- Icons -->
 
-</div>
+          <!-- Icons -->
+
+          <div class="d-flex align-items-center ms-3 icon-box">
+            <a href="login.html">
+              <i class="bi bi-person-circle me-3"></i>
+            </a>
+            <i class="bi bi-cart"></i>
           </div>
-        </div>
-      </nav>
-    </header>
 
-    <!-- Navbar End -->
-    
-    
-   
- <section class="contact-section">
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Navbar End -->
+
+
+
+  <section class="contact-section">
 
     <div class="contact-form">
 
       <h2 class="animated-title">
-   <span>C</span>
-   <span>o</span>
-   <span>n</span>
-   <span>t</span>
-   <span>a</span>
-   <span>c</span>
-   <span>t</span>
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
 
-   <span class="space"></span>
+        <span class="space"></span>
 
-   <span>U</span>
-   <span>s</span>
-</h2>
+        <span>U</span>
+        <span>s</span>
+      </h2>
       <p>We would love to hear from you</p>
 
       <form>
@@ -442,38 +425,22 @@ textarea.form-control{
 
           <!-- Name -->
           <div class="col-md-6">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Full Name"
-            >
+            <input type="text" class="form-control" placeholder="Full Name">
           </div>
 
           <!-- Email -->
           <div class="col-md-6">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email Address"
-            >
+            <input type="email" class="form-control" placeholder="Email Address">
           </div>
 
           <!-- Phone -->
           <div class="col-md-6">
-            <input
-              type="tel"
-              class="form-control"
-              placeholder="Phone Number"
-            >
+            <input type="tel" class="form-control" placeholder="Phone Number">
           </div>
 
           <!-- Subject -->
           <div class="col-md-6">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Subject"
-            >
+            <input type="text" class="form-control" placeholder="Subject">
           </div>
 
           <!-- Book Category -->
@@ -489,19 +456,12 @@ textarea.form-control{
 
           <!-- City -->
           <div class="col-md-6">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="City"
-            >
+            <input type="text" class="form-control" placeholder="City">
           </div>
 
           <!-- Message -->
           <div class="col-12">
-            <textarea
-              class="form-control"
-              placeholder="Write Your Message..."
-            ></textarea>
+            <textarea class="form-control" placeholder="Write Your Message..."></textarea>
           </div>
 
           <!-- Button -->
@@ -519,76 +479,85 @@ textarea.form-control{
 
   </section>
 
-  
-
-    
 
 
-     <!-- Footer Start -->
+
+
+
+  <body>
+
+    <!-- Footer Start -->
 
     <footer class="footer mt-5">
       <div class="container">
         <div class="row">
+
           <!-- About -->
           <div class="col-md-3">
             <h5>📖 Reader Hub</h5>
-            <p>
-              Your one-stop destination for novels, academic books, and
-              bestsellers. Discover your next great read.
-            </p>
+            <p>Your one-stop destination for novels, academic
+              books, and bestsellers. Discover your next
+              great read.</p>
           </div>
 
           <!-- Categories -->
           <div class="col-md-3">
             <h5>Categories</h5>
-            <a href="#">Fiction</a>
-            <a href="#">Non-Fiction</a>
-            <a href="#">Children</a>
-            <a href="#">Education</a>
+            <a href="fiction_books.html">Fiction</a>
+            <a href="non_fiction.html">Non-Fiction</a>
+            <a href="motivational.html">Motivational</a>
+            <a href="mythology.html">Mythology</a>
+            <a href="competitive_exam.html">Competitive-Exams</a>
           </div>
 
           <!-- Quick Links -->
           <div class="col-md-3">
             <h5>Quick Links</h5>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Return & Replacement</a>
-            <a href="#">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="terms_condition.html">Terms &
+              Conditions</a>
+            <a href="return_replacement.html">Return &
+              Replacement</a>
+            <a href="contact.html">Contact Us</a>
           </div>
 
           <!-- Newsletter -->
           <div class="col-md-3">
             <h5>Follow Us</h5>
             <div class="row">
+
               <!-- Social Icons -->
               <div class="col-md-1 social-icons mt-1">
-                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
               </div>
-              <div class="col-md-1social-icons mt-1">
-                <a href="#"><i class="bi bi-instagram"></i></a>
+              <div class=" col-md-1social-icons mt-1">
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
               </div>
               <div class="col-md-1 social-icons mt-1">
-                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="https://x.com/"><i class="bi bi-twitter"></i></a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
       <!-- Bottom -->
       <div class="footer-bottom">
-        <p>© <span id="year"></span> ReadersHub | All Rights Reserved</p>
+        <p>© <span id="year"></span> ReadersHub | All Rights
+          Reserved</p>
       </div>
     </footer>
 
     <!-- Footer End -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-   
   </body>
-</html> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
